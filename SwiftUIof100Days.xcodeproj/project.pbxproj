@@ -12,6 +12,7 @@
 		7110C62C280C6272004A0AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7110C62B280C6272004A0AA9 /* Assets.xcassets */; };
 		7110C62F280C6272004A0AA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7110C62E280C6272004A0AA9 /* Preview Assets.xcassets */; };
 		7110C637280DB700004A0AA9 /* Day16View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C636280DB700004A0AA9 /* Day16View.swift */; };
+		71D7F08F280EFF8B00B31AFC /* Day17View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F08E280EFF8B00B31AFC /* Day17View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		7110C62B280C6272004A0AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7110C62E280C6272004A0AA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7110C636280DB700004A0AA9 /* Day16View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16View.swift; sourceTree = "<group>"; };
+		71D7F08E280EFF8B00B31AFC /* Day17View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */,
 				7110C629280C6271004A0AA9 /* ContentView.swift */,
 				7110C635280DB6E1004A0AA9 /* Day16 */,
+				71D7F08D280EFF7700B31AFC /* Day17 */,
 				7110C62B280C6272004A0AA9 /* Assets.xcassets */,
 				7110C62D280C6272004A0AA9 /* Preview Content */,
 			);
@@ -76,6 +79,14 @@
 				7110C636280DB700004A0AA9 /* Day16View.swift */,
 			);
 			name = Day16;
+			sourceTree = "<group>";
+		};
+		71D7F08D280EFF7700B31AFC /* Day17 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F08E280EFF8B00B31AFC /* Day17View.swift */,
+			);
+			name = Day17;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				7110C62A280C6271004A0AA9 /* ContentView.swift in Sources */,
 				7110C637280DB700004A0AA9 /* Day16View.swift in Sources */,
 				7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */,
+				71D7F08F280EFF8B00B31AFC /* Day17View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
