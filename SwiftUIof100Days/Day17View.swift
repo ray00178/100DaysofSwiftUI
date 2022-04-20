@@ -23,7 +23,6 @@ struct Day17View: View {
         var temp: [Int] = []
         
         for i in 0 ... 100 {
-            guard i.isMultiple(of: 20) else { continue }
             temp.append(i)
         }
         
@@ -62,7 +61,6 @@ struct Day17View: View {
                             Text($0, format: .percent)
                         }
                     }
-                    .pickerStyle(.segmented)
                 } header: {
                     Text("How much tip do you want to leave?")
                 }
