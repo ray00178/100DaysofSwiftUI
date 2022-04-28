@@ -52,6 +52,11 @@ struct Day23View: View {
                     .cornerRadius(8)
                     .shadow(radius: 8.0)
             }
+            
+            GridStack(rows: 3, columns: 3) { row, col in
+                Image(systemName: "\(row * 4 + col).circle")
+                Text("R\(row) C\(col)")
+            }
         }
         .font(.title)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -62,6 +67,7 @@ struct Day23View: View {
 struct Day23View_Previews: PreviewProvider {
     static var previews: some View {
         Day23View()
+.previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
 
@@ -100,4 +106,27 @@ extension View {
         modifier(Title())
     }
     
+}
+
+// MARK: - Custom containers
+
+struct GridStack<Content: View>: View {
+    
+    let rows: Int
+    let columns: Int
+    
+    // 添加隱性的HStack, 因外層是HStack
+    @ViewBuilder let content: (Int, Int) -> Content
+    
+    var body: some View {
+        VStack {
+            ForEach(0 ..< rows, id: \.self) { row in
+                HStack {
+                    ForEach(0 ..< columns, id: \.self) { column in
+                        content(row, column)
+                    }
+                }
+            }
+        }
+    }
 }
