@@ -19,6 +19,7 @@
 		71D7F0A02818327400B31AFC /* Day23View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F09F2818327400B31AFC /* Day23View.swift */; };
 		71D7F0A3281988AF00B31AFC /* Day26View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F0A2281988AF00B31AFC /* Day26View.swift */; };
 		71D7F0A6281AE28400B31AFC /* Day27View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F0A5281AE28400B31AFC /* Day27View.swift */; };
+		71D7F0D4281ECC0A00B31AFC /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F0D3281ECC0A00B31AFC /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		71D7F09F2818327400B31AFC /* Day23View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day23View.swift; sourceTree = "<group>"; };
 		71D7F0A2281988AF00B31AFC /* Day26View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day26View.swift; sourceTree = "<group>"; };
 		71D7F0A5281AE28400B31AFC /* Day27View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day27View.swift; sourceTree = "<group>"; };
+		71D7F0D3281ECC0A00B31AFC /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				71D7F0A1281988A100B31AFC /* Day26 */,
 				71D7F0A4281AE27100B31AFC /* Day27 */,
 				7110C62B280C6272004A0AA9 /* Assets.xcassets */,
+				71D7F0D3281ECC0A00B31AFC /* SleepCalculator.mlmodel */,
 				7110C62D280C6272004A0AA9 /* Preview Content */,
 			);
 			path = SwiftUIof100Days;
@@ -233,6 +236,7 @@
 				7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */,
 				71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */,
 				71D7F095281055E200B31AFC /* Day19View.swift in Sources */,
+				71D7F0D4281ECC0A00B31AFC /* SleepCalculator.mlmodel in Sources */,
 				71D7F08F280EFF8B00B31AFC /* Day17View.swift in Sources */,
 				71D7F09C2811B07C00B31AFC /* Day21View.swift in Sources */,
 			);
