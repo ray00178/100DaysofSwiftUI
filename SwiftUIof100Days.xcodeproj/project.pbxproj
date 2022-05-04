@@ -22,6 +22,7 @@
 		71D7F0D4281ECC0A00B31AFC /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F0D3281ECC0A00B31AFC /* SleepCalculator.mlmodel */; };
 		71D7F0D82821777800B31AFC /* Day29View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F0D72821777800B31AFC /* Day29View.swift */; };
 		71D7F0DB28217BEB00B31AFC /* URL-file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 71D7F0DA28217BEB00B31AFC /* URL-file.txt */; };
+		71D7F0DE2822CE8600B31AFC /* Day30View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F0DD2822CE8600B31AFC /* Day30View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		71D7F0D3281ECC0A00B31AFC /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		71D7F0D72821777800B31AFC /* Day29View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day29View.swift; sourceTree = "<group>"; };
 		71D7F0DA28217BEB00B31AFC /* URL-file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "URL-file.txt"; sourceTree = "<group>"; };
+		71D7F0DD2822CE8600B31AFC /* Day30View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day30View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				71D7F0A1281988A100B31AFC /* Day26 */,
 				71D7F0A4281AE27100B31AFC /* Day27 */,
 				71D7F0D62821776900B31AFC /* Day29 */,
+				71D7F0DC2822CE7800B31AFC /* Day30 */,
 				71D7F0D928217BA100B31AFC /* Resources */,
 				7110C62B280C6272004A0AA9 /* Assets.xcassets */,
 				71D7F0D3281ECC0A00B31AFC /* SleepCalculator.mlmodel */,
@@ -180,6 +183,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		71D7F0DC2822CE7800B31AFC /* Day30 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F0DD2822CE8600B31AFC /* Day30View.swift */,
+			);
+			name = Day30;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +270,7 @@
 				71D7F0A6281AE28400B31AFC /* Day27View.swift in Sources */,
 				7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */,
 				71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */,
+				71D7F0DE2822CE8600B31AFC /* Day30View.swift in Sources */,
 				71D7F095281055E200B31AFC /* Day19View.swift in Sources */,
 				71D7F0D4281ECC0A00B31AFC /* SleepCalculator.mlmodel in Sources */,
 				71D7F08F280EFF8B00B31AFC /* Day17View.swift in Sources */,
