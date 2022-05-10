@@ -67,7 +67,7 @@ struct Day23View: View {
 struct Day23View_Previews: PreviewProvider {
     static var previews: some View {
         Day23View()
-.previewInterfaceOrientation(.portraitUpsideDown)
+            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
 
