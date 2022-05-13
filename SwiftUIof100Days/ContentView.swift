@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        Day32View()
+        Day37View()
     }
 }
 

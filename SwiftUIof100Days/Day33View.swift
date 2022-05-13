@@ -21,17 +21,21 @@ struct Day33View: View {
                 .fill(.blue)
                 .frame(width: 200, height: 200)
             
-            if isShowingRed {
+            Text("Hello")
+                .frame(width: 200, height: 200)
+                .foregroundColor(.white)
+                .background(.red)
+                .opacity(isShowingRed ? 1 : 0)
+                .animation(.linear(duration: 0.3), value: isShowingRed)
+            /*if isShowingRed {
                 Rectangle()
-                    .fill(.red)
+                    .fill(.orange)
                     .frame(width: 200, height: 200)
                     .transition(.pivot)
-            }
+            }*/
         }
         .onTapGesture {
-            withAnimation {
-                isShowingRed.toggle()
-            }
+            isShowingRed.toggle()
         }
     }
 }
