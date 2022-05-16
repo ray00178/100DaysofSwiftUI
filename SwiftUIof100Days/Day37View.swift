@@ -17,8 +17,46 @@ struct Day37View: View {
     @State private var numbers = [Int]()
     @State private var currentNumber = 1
     
+    //@State private var tapCount = UserDefaults.standard.integer(forKey: "Tap")
+    @AppStorage("tapCount") private var tapCount = 0
+    
+    @State private var profile = Profile(name: "Ray", gender: 0)
+    @State private var profile2: Profile?
+    
     var body: some View {
-        NavigationView {
+        VStack {
+            Button("Save Profile") {
+                let encoder = JSONEncoder()
+                
+                if let data = try? encoder.encode(profile) {
+                    UserDefaults.standard.set(data, forKey: "Profile")
+                }
+            }
+            
+            Button("Get Profile") {
+                let decoder = JSONDecoder()
+                
+                if let value = UserDefaults.standard.data(forKey: "Profile"),
+                   let profile = try? decoder.decode(Profile.self, from: value) {
+                    profile2 = profile
+                }
+            }.padding(12)
+            
+            if let value = profile2 {
+                Text("\(value.name), \(value.gender == 0 ? "Boy" : "Girl")")
+            }
+            
+        }
+        
+        
+        
+        /*Button("Count = \(tapCount)") {
+            tapCount += 1
+            
+            //UserDefaults.standard.set(tapCount, forKey: "Tap")
+        }*/
+        
+        /*NavigationView {
             VStack {
                 List {
                     ForEach(numbers, id: \.self) {
@@ -42,7 +80,7 @@ struct Day37View: View {
             .toolbar {
                 EditButton()
             }
-        }
+        }*/
         
         /*Button("Show sheet") {
             showingSheet.toggle()
@@ -95,5 +133,13 @@ class User: ObservableObject {
     
     @Published var firstName = "Ray"
     @Published var lastName = "Jhang"
+    
+}
+
+struct Profile: Codable {
+    
+    let name: String
+    
+    let gender: Int
     
 }
