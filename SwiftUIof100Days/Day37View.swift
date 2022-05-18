@@ -13,11 +13,24 @@ struct Day37View: View {
     
     @State private var showingAddExpense = false
     
+    var currency: String {
+        return Locale.current.currencyCode ?? "USD"
+    }
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenses.items) {
-                    Text($0.name)
+                ForEach(expenses.items) { (item) in
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.type)
+                        }
+                        
+                        Spacer()
+                        Text(item.amount, format: .currency(code: currency))
+                    }
                 }
                 .onDelete(perform: removeItems)
             }
@@ -30,7 +43,7 @@ struct Day37View: View {
                 }
             }
             .sheet(isPresented: $showingAddExpense) {
-                AddView(expenses: expenses)
+                AddView(expenses: expenses, currency: currency)
             }
         }
     }
@@ -48,9 +61,9 @@ struct Day37View_Previews: PreviewProvider {
 
 // MARK: - Model
 
-struct ExpenseItem: Identifiable {
+struct ExpenseItem: Identifiable, Codable {
     
-    let id = UUID()
+    var id = UUID()
     let name: String
     let type: String
     let amount: Double
@@ -59,5 +72,21 @@ struct ExpenseItem: Identifiable {
 
 class Expenses: ObservableObject {
     
-    @Published var items = [ExpenseItem]()
+    @Published var items = [ExpenseItem]() {
+        didSet {
+            if let data = try? JSONEncoder().encode(items) {
+                UserDefaults.standard.set(data, forKey: "Items")
+            }
+        }
+    }
+    
+    init() {
+        guard let data = UserDefaults.standard.data(forKey: "Items"),
+              let value = try? JSONDecoder().decode([ExpenseItem].self, from: data)
+        else {
+            return
+        }
+        
+        items = value
+    }
 }

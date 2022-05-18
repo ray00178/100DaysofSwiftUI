@@ -15,6 +15,10 @@ struct AddView: View {
     
     @ObservedObject var expenses: Expenses
     
+    var currency: String
+    
+    @Environment(\.dismiss) var dismiss
+    
     let types: [String] = ["Business", "Personal"]
     
     var body: some View {
@@ -28,16 +32,25 @@ struct AddView: View {
                     }
                 }
                 
-                TextField("Amount", value: $amount, format: .currency(code: "USD"))
+                TextField("Amount", value: $amount, format: .currency(code: currency))
                     .keyboardType(.decimalPad)
             }
-            .navigationTitle("dd new expense")
+            .navigationTitle("Add new expense")
+            .toolbar {
+                Button("Save") {
+                    let item = ExpenseItem(name: name, type: type, amount: amount)
+                    expenses.items.append(item)
+                    
+                    dismiss()
+                }
+            }
         }
     }
 }
 
 struct AddView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        AddView(expenses: Expenses())
+        AddView(expenses: Expenses(), currency: "USD")
     }
 }
