@@ -24,6 +24,8 @@
 		719B82D7283BDFEC00258B63 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82D6283BDFEC00258B63 /* Bundle-Decodable.swift */; };
 		719B82D9283BE0A200258B63 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 719B82D8283BE0A200258B63 /* astronauts.json */; };
 		719B82DB283BE0A900258B63 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 719B82DA283BE0A900258B63 /* missions.json */; };
+		719B82DD283D196E00258B63 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82DC283D196E00258B63 /* Mission.swift */; };
+		719B82DF283D29A500258B63 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82DE283D29A500258B63 /* Theme.swift */; };
 		71D7F08F280EFF8B00B31AFC /* Day17View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F08E280EFF8B00B31AFC /* Day17View.swift */; };
 		71D7F095281055E200B31AFC /* Day19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F094281055E200B31AFC /* Day19View.swift */; };
 		71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F09728105D7F00B31AFC /* Day20View.swift */; };
@@ -56,6 +58,8 @@
 		719B82D6283BDFEC00258B63 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		719B82D8283BE0A200258B63 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		719B82DA283BE0A900258B63 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		719B82DC283D196E00258B63 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		719B82DE283D29A500258B63 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		71D7F08E280EFF8B00B31AFC /* Day17View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17View.swift; sourceTree = "<group>"; };
 		71D7F094281055E200B31AFC /* Day19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19View.swift; sourceTree = "<group>"; };
 		71D7F09728105D7F00B31AFC /* Day20View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day20View.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 				719B82D2283A8FEC00258B63 /* Day40View.swift */,
 				719B82D4283BDFC000258B63 /* Astronaut.swift */,
 				719B82D6283BDFEC00258B63 /* Bundle-Decodable.swift */,
+				719B82DC283D196E00258B63 /* Mission.swift */,
+				719B82DE283D29A500258B63 /* Theme.swift */,
 			);
 			path = Day40;
 			sourceTree = "<group>";
@@ -351,12 +357,14 @@
 			files = (
 				71D7F0A02818327400B31AFC /* Day23View.swift in Sources */,
 				71D7F0D82821777800B31AFC /* Day29View.swift in Sources */,
+				719B82DD283D196E00258B63 /* Mission.swift in Sources */,
 				719B82CA2833F6E600258B63 /* AddView.swift in Sources */,
 				719B82D5283BDFC000258B63 /* Astronaut.swift in Sources */,
 				719B82CD2835486F00258B63 /* Day39View.swift in Sources */,
 				71D7F0A3281988AF00B31AFC /* Day26View.swift in Sources */,
 				7110C62A280C6271004A0AA9 /* ContentView.swift in Sources */,
 				7110C637280DB700004A0AA9 /* Day16View.swift in Sources */,
+				719B82DF283D29A500258B63 /* Theme.swift in Sources */,
 				71D7F0A6281AE28400B31AFC /* Day27View.swift in Sources */,
 				7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */,
 				71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */,
