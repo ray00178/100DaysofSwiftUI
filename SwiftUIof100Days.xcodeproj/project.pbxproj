@@ -29,6 +29,7 @@
 		719B82E2283D2DD500258B63 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82E1283D2DD500258B63 /* MissionView.swift */; };
 		719B82E4283FD01400258B63 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82E3283FD01400258B63 /* AstronautView.swift */; };
 		719B82E8283FD69C00258B63 /* Day43View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82E7283FD69C00258B63 /* Day43View.swift */; };
+		719B82EB2846532000258B63 /* Day44View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82EA2846532000258B63 /* Day44View.swift */; };
 		71D7F08F280EFF8B00B31AFC /* Day17View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F08E280EFF8B00B31AFC /* Day17View.swift */; };
 		71D7F095281055E200B31AFC /* Day19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F094281055E200B31AFC /* Day19View.swift */; };
 		71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F09728105D7F00B31AFC /* Day20View.swift */; };
@@ -66,6 +67,7 @@
 		719B82E1283D2DD500258B63 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		719B82E3283FD01400258B63 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 		719B82E7283FD69C00258B63 /* Day43View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day43View.swift; sourceTree = "<group>"; };
+		719B82EA2846532000258B63 /* Day44View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day44View.swift; sourceTree = "<group>"; };
 		71D7F08E280EFF8B00B31AFC /* Day17View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17View.swift; sourceTree = "<group>"; };
 		71D7F094281055E200B31AFC /* Day19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19View.swift; sourceTree = "<group>"; };
 		71D7F09728105D7F00B31AFC /* Day20View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day20View.swift; sourceTree = "<group>"; };
@@ -111,24 +113,25 @@
 			children = (
 				7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */,
 				7110C629280C6271004A0AA9 /* ContentView.swift */,
+				719B82E92846531100258B63 /* Day44 */,
 				719B82E6283FD68E00258B63 /* Day43 */,
 				719B82E0283D2DC800258B63 /* Day41 */,
 				719B82D1283A8FDF00258B63 /* Day40 */,
 				719B82CB2835485C00258B63 /* Day39 */,
-				719B82C62832AA8700258B63 /* Day37 */,
-				719B82C3282EBBF200258B63 /* Day36 */,
-				7110C635280DB6E1004A0AA9 /* Day16 */,
-				71D7F08D280EFF7700B31AFC /* Day17 */,
-				71D7F093281055D300B31AFC /* Day19 */,
-				71D7F09628105D7300B31AFC /* Day20 */,
-				71D7F09A2811B06D00B31AFC /* Day21 */,
-				71D7F09E2818326600B31AFC /* Day23 */,
-				71D7F0A1281988A100B31AFC /* Day26 */,
-				71D7F0A4281AE27100B31AFC /* Day27 */,
-				71D7F0D62821776900B31AFC /* Day29 */,
-				71D7F0DC2822CE7800B31AFC /* Day30 */,
-				719B82BD2825862100258B63 /* Day32 */,
-				719B82C028296C8200258B63 /* Day33 */,
+				719B82ED28465F0800258B63 /* Day37 */,
+				719B82EE28465F2100258B63 /* Day36 */,
+				719B82EF28465F3200258B63 /* Day33 */,
+				719B82F028465F3F00258B63 /* Day32 */,
+				719B82F328465F5700258B63 /* Day30 */,
+				719B82F428465F6C00258B63 /* Day29 */,
+				719B82F528465F7A00258B63 /* Day27 */,
+				719B82F728465F8C00258B63 /* Day26 */,
+				719B82F828465F9A00258B63 /* Day23 */,
+				719B82F928465FA900258B63 /* Day21 */,
+				719B82FA28465FCF00258B63 /* Day20 */,
+				719B82FB28465FD900258B63 /* Day19 */,
+				719B82FC28465FE100258B63 /* Day17 */,
+				719B82FD28465FEB00258B63 /* Day16 */,
 				71D7F0D928217BA100B31AFC /* Resources */,
 				7110C62B280C6272004A0AA9 /* Assets.xcassets */,
 				71D7F0D3281ECC0A00B31AFC /* SleepCalculator.mlmodel */,
@@ -143,47 +146,6 @@
 				7110C62E280C6272004A0AA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7110C635280DB6E1004A0AA9 /* Day16 */ = {
-			isa = PBXGroup;
-			children = (
-				7110C636280DB700004A0AA9 /* Day16View.swift */,
-			);
-			name = Day16;
-			sourceTree = "<group>";
-		};
-		719B82BD2825862100258B63 /* Day32 */ = {
-			isa = PBXGroup;
-			children = (
-				719B82BE2825862E00258B63 /* Day32View.swift */,
-			);
-			name = Day32;
-			sourceTree = "<group>";
-		};
-		719B82C028296C8200258B63 /* Day33 */ = {
-			isa = PBXGroup;
-			children = (
-				719B82C128296C9200258B63 /* Day33View.swift */,
-			);
-			name = Day33;
-			sourceTree = "<group>";
-		};
-		719B82C3282EBBF200258B63 /* Day36 */ = {
-			isa = PBXGroup;
-			children = (
-				719B82C4282EBC0100258B63 /* Day36View.swift */,
-			);
-			name = Day36;
-			sourceTree = "<group>";
-		};
-		719B82C62832AA8700258B63 /* Day37 */ = {
-			isa = PBXGroup;
-			children = (
-				719B82C72832AA9500258B63 /* Day37View.swift */,
-				719B82C92833F6E600258B63 /* AddView.swift */,
-			);
-			name = Day37;
 			sourceTree = "<group>";
 		};
 		719B82CB2835485C00258B63 /* Day39 */ = {
@@ -223,68 +185,125 @@
 			path = Day43;
 			sourceTree = "<group>";
 		};
-		71D7F08D280EFF7700B31AFC /* Day17 */ = {
+		719B82E92846531100258B63 /* Day44 */ = {
 			isa = PBXGroup;
 			children = (
-				71D7F08E280EFF8B00B31AFC /* Day17View.swift */,
+				719B82EA2846532000258B63 /* Day44View.swift */,
 			);
-			name = Day17;
+			path = Day44;
 			sourceTree = "<group>";
 		};
-		71D7F093281055D300B31AFC /* Day19 */ = {
+		719B82ED28465F0800258B63 /* Day37 */ = {
 			isa = PBXGroup;
 			children = (
-				71D7F094281055E200B31AFC /* Day19View.swift */,
+				719B82C72832AA9500258B63 /* Day37View.swift */,
+				719B82C92833F6E600258B63 /* AddView.swift */,
 			);
-			name = Day19;
+			path = Day37;
 			sourceTree = "<group>";
 		};
-		71D7F09628105D7300B31AFC /* Day20 */ = {
+		719B82EE28465F2100258B63 /* Day36 */ = {
 			isa = PBXGroup;
 			children = (
-				71D7F09728105D7F00B31AFC /* Day20View.swift */,
+				719B82C4282EBC0100258B63 /* Day36View.swift */,
 			);
-			name = Day20;
+			path = Day36;
 			sourceTree = "<group>";
 		};
-		71D7F09A2811B06D00B31AFC /* Day21 */ = {
+		719B82EF28465F3200258B63 /* Day33 */ = {
 			isa = PBXGroup;
 			children = (
-				71D7F09B2811B07C00B31AFC /* Day21View.swift */,
+				719B82C128296C9200258B63 /* Day33View.swift */,
 			);
-			name = Day21;
+			path = Day33;
 			sourceTree = "<group>";
 		};
-		71D7F09E2818326600B31AFC /* Day23 */ = {
+		719B82F028465F3F00258B63 /* Day32 */ = {
 			isa = PBXGroup;
 			children = (
-				71D7F09F2818327400B31AFC /* Day23View.swift */,
+				719B82BE2825862E00258B63 /* Day32View.swift */,
 			);
-			name = Day23;
+			path = Day32;
 			sourceTree = "<group>";
 		};
-		71D7F0A1281988A100B31AFC /* Day26 */ = {
+		719B82F328465F5700258B63 /* Day30 */ = {
 			isa = PBXGroup;
 			children = (
-				71D7F0A2281988AF00B31AFC /* Day26View.swift */,
+				71D7F0DD2822CE8600B31AFC /* Day30View.swift */,
 			);
-			name = Day26;
+			path = Day30;
 			sourceTree = "<group>";
 		};
-		71D7F0A4281AE27100B31AFC /* Day27 */ = {
-			isa = PBXGroup;
-			children = (
-				71D7F0A5281AE28400B31AFC /* Day27View.swift */,
-			);
-			name = Day27;
-			sourceTree = "<group>";
-		};
-		71D7F0D62821776900B31AFC /* Day29 */ = {
+		719B82F428465F6C00258B63 /* Day29 */ = {
 			isa = PBXGroup;
 			children = (
 				71D7F0D72821777800B31AFC /* Day29View.swift */,
 			);
-			name = Day29;
+			path = Day29;
+			sourceTree = "<group>";
+		};
+		719B82F528465F7A00258B63 /* Day27 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F0A5281AE28400B31AFC /* Day27View.swift */,
+			);
+			path = Day27;
+			sourceTree = "<group>";
+		};
+		719B82F728465F8C00258B63 /* Day26 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F0A2281988AF00B31AFC /* Day26View.swift */,
+			);
+			path = Day26;
+			sourceTree = "<group>";
+		};
+		719B82F828465F9A00258B63 /* Day23 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F09F2818327400B31AFC /* Day23View.swift */,
+			);
+			path = Day23;
+			sourceTree = "<group>";
+		};
+		719B82F928465FA900258B63 /* Day21 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F09B2811B07C00B31AFC /* Day21View.swift */,
+			);
+			path = Day21;
+			sourceTree = "<group>";
+		};
+		719B82FA28465FCF00258B63 /* Day20 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F09728105D7F00B31AFC /* Day20View.swift */,
+			);
+			path = Day20;
+			sourceTree = "<group>";
+		};
+		719B82FB28465FD900258B63 /* Day19 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F094281055E200B31AFC /* Day19View.swift */,
+			);
+			path = Day19;
+			sourceTree = "<group>";
+		};
+		719B82FC28465FE100258B63 /* Day17 */ = {
+			isa = PBXGroup;
+			children = (
+				71D7F08E280EFF8B00B31AFC /* Day17View.swift */,
+			);
+			path = Day17;
+			sourceTree = "<group>";
+		};
+		719B82FD28465FEB00258B63 /* Day16 */ = {
+			isa = PBXGroup;
+			children = (
+				7110C636280DB700004A0AA9 /* Day16View.swift */,
+			);
+			path = Day16;
 			sourceTree = "<group>";
 		};
 		71D7F0D928217BA100B31AFC /* Resources */ = {
@@ -296,14 +315,6 @@
 				719B82DA283BE0A900258B63 /* missions.json */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		71D7F0DC2822CE7800B31AFC /* Day30 */ = {
-			isa = PBXGroup;
-			children = (
-				71D7F0DD2822CE8600B31AFC /* Day30View.swift */,
-			);
-			name = Day30;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +406,7 @@
 				7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */,
 				71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */,
 				719B82BF2825862E00258B63 /* Day32View.swift in Sources */,
+				719B82EB2846532000258B63 /* Day44View.swift in Sources */,
 				71D7F0DE2822CE8600B31AFC /* Day30View.swift in Sources */,
 				71D7F095281055E200B31AFC /* Day19View.swift in Sources */,
 				719B82C228296C9200258B63 /* Day33View.swift in Sources */,
