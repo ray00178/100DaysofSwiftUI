@@ -109,8 +109,8 @@
 		7110C61B280C6271004A0AA9 = {
 			isa = PBXGroup;
 			children = (
-				7110C626280C6271004A0AA9 /* SwiftUIof100Days */,
 				7110C625280C6271004A0AA9 /* Products */,
+				7110C626280C6271004A0AA9 /* SwiftUIof100Days */,
 			);
 			sourceTree = "<group>";
 		};
@@ -614,11 +614,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.iosdeveloper.SwiftUIof100Days;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.swiftmagic.SwiftUIof100Days;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -643,11 +643,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.iosdeveloper.SwiftUIof100Days;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.swiftmagic.SwiftUIof100Days;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
