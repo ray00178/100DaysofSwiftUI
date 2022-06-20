@@ -10,29 +10,30 @@ import SwiftUI
 // MARK: - BookwormContentView
 
 struct BookwormContentView: View {
-  
   @State private var rememberMe: Bool = false
-  
+
   @AppStorage("note") private var note = ""
-  
+
   @Environment(\.managedObjectContext) var moc
   @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
-  
-  @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+
+  @FetchRequest(sortDescriptors: [
+    SortDescriptor(\.author),
+    SortDescriptor(\.title, order: .reverse),
+  ]) var books: FetchedResults<Book>
   @State private var showingAddScreen = false
-  
+
   var body: some View {
-    
     NavigationView {
       List {
         ForEach(books) { book in
           NavigationLink {
-            Text(book.title ?? "Unknown Title")
+            DetailView(book: book)
           } label: {
             HStack {
               EmojiRatingView(rating: book.rating)
                 .font(.largeTitle)
-              
+
               VStack(alignment: .leading) {
                 Text(book.title ?? "Unknown Title")
                   .font(.headline)
@@ -41,6 +42,9 @@ struct BookwormContentView: View {
               }
             }
           }
+        }
+        .onDelete { indexSet in
+          deleteBooks(at: indexSet)
         }
       }
       .navigationTitle("Bookworm")
@@ -52,44 +56,60 @@ struct BookwormContentView: View {
             Label("Add Book", systemImage: "plus")
           }
         }
+        
+        ToolbarItem(placement: .navigationBarLeading) {
+          EditButton()
+        }
       }
       .sheet(isPresented: $showingAddScreen) {
         AddBookView()
       }
     }
-    
-    /*VStack {
-      List(students) { (student) in
-        Text(student.name ?? "Unknown")
-      }
-      
-      Button("Add") {
-        let firstNames = ["Ginny", "Harry", "Hermione", "Luna", "Ron"]
-        let lastNames = ["Granger", "Lovegood", "Potter", "Weasley"]
 
-        let chosenFirstName = firstNames.randomElement()!
-        let chosenLastName = lastNames.randomElement()!
-        
-        let student = Student(context: moc)
-        student.id = UUID()
-        student.name = "\(chosenFirstName) \(chosenLastName)"
-        
-        try? moc.save()
-      }
-    }*/
-    
+    /* VStack {
+       List(students) { (student) in
+         Text(student.name ?? "Unknown")
+       }
+
+       Button("Add") {
+         let firstNames = ["Ginny", "Harry", "Hermione", "Luna", "Ron"]
+         let lastNames = ["Granger", "Lovegood", "Potter", "Weasley"]
+
+         let chosenFirstName = firstNames.randomElement()!
+         let chosenLastName = lastNames.randomElement()!
+
+         let student = Student(context: moc)
+         student.id = UUID()
+         student.name = "\(chosenFirstName) \(chosenLastName)"
+
+         try? moc.save()
+       }
+     } */
+
     //
-    /*NavigationView {
-      TextEditor(text: $note)
-        .navigationTitle("Notes")
-        .padding()
-    }*/
-    
+    /* NavigationView {
+       TextEditor(text: $note)
+         .navigationTitle("Notes")
+         .padding()
+     } */
+
     // Creating a custom component with @Binding
-    /*VStack {
-      PushButton(title: "Remember Me", isOn: $rememberMe)
-      Text(rememberMe ? "On" : "Off")
-    }*/
+    /* VStack {
+       PushButton(title: "Remember Me", isOn: $rememberMe)
+       Text(rememberMe ? "On" : "Off")
+     } */
+  }
+
+  func deleteBooks(at offsets: IndexSet) {
+    for offset in offsets {
+      // find this book in our fetch request
+      let book = books[offset]
+
+      // delete it from the context
+      moc.delete(book)
+    }
+    
+    try? moc.save()
   }
 }
 
