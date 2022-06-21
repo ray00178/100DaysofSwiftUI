@@ -13,10 +13,16 @@ struct SwiftUIof100DaysApp: App {
   /// For Bookworm project
   @StateObject private var dataController = DataController()
   
+  /// For CoreDataProject project
+  @StateObject private var dataController2 = CoreDataProjectDataController()
+  
   var body: some Scene {
     WindowGroup {
-      BookwormContentView()
-        .environment(\.managedObjectContext, dataController.container.viewContext)
+      /*BookwormContentView()
+        .environment(\.managedObjectContext, dataController.container.viewContext)*/
+      
+      CoreDataProjectContentView()
+        .environment(\.managedObjectContext, dataController2.container.viewContext)
     }
   }
 }

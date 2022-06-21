@@ -19,8 +19,6 @@ class DataController: ObservableObject {
         print("Core Data failed to load: \(error.localizedDescription)")
         return
       }
-      
-      
     }
   }
 }

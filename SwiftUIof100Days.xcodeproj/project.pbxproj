@@ -25,6 +25,11 @@
 		7185C2C92850E92A00FE1D6E /* CupcakeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185C2C82850E92A00FE1D6E /* CupcakeContentView.swift */; };
 		7185C2CB285162E200FE1D6E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185C2CA285162E200FE1D6E /* Order.swift */; };
 		7185C2CF2851635200FE1D6E /* Day49View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185C2CE2851635200FE1D6E /* Day49View.swift */; };
+		7191D85828620B7600EA1722 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7191D85628620B7600EA1722 /* CoreDataProject.xcdatamodeld */; };
+		7191D86328620E8800EA1722 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D86128620E8800EA1722 /* Movie+CoreDataClass.swift */; };
+		7191D86428620E8800EA1722 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D86228620E8800EA1722 /* Movie+CoreDataProperties.swift */; };
+		7191D866286210AB00EA1722 /* CoreDataProjectContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D865286210AB00EA1722 /* CoreDataProjectContentView.swift */; };
+		7191D8682862128100EA1722 /* CoreDataProjectDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D8672862128100EA1722 /* CoreDataProjectDataController.swift */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -77,6 +82,11 @@
 		7185C2C82850E92A00FE1D6E /* CupcakeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeContentView.swift; sourceTree = "<group>"; };
 		7185C2CA285162E200FE1D6E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		7185C2CE2851635200FE1D6E /* Day49View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day49View.swift; sourceTree = "<group>"; };
+		7191D85728620B7600EA1722 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		7191D86128620E8800EA1722 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		7191D86228620E8800EA1722 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		7191D865286210AB00EA1722 /* CoreDataProjectContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectContentView.swift; sourceTree = "<group>"; };
+		7191D8672862128100EA1722 /* CoreDataProjectDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectDataController.swift; sourceTree = "<group>"; };
 		719B82BB282585A400258B63 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		719B82BE2825862E00258B63 /* Day32View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32View.swift; sourceTree = "<group>"; };
 		719B82C128296C9200258B63 /* Day33View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33View.swift; sourceTree = "<group>"; };
@@ -141,6 +151,7 @@
 			children = (
 				7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */,
 				7110C629280C6271004A0AA9 /* ContentView.swift */,
+				7191D85528620B5800EA1722 /* CoreDataProject */,
 				711DA7882858D7E8009AB3E7 /* Bookworm */,
 				7185C2C52850E63C00FE1D6E /* CupcakeCorner */,
 				7185C2CD2851633900FE1D6E /* Day49 */,
@@ -212,6 +223,18 @@
 				7185C2C62850E6F500FE1D6E /* UserX.swift */,
 			);
 			path = Day49;
+			sourceTree = "<group>";
+		};
+		7191D85528620B5800EA1722 /* CoreDataProject */ = {
+			isa = PBXGroup;
+			children = (
+				7191D865286210AB00EA1722 /* CoreDataProjectContentView.swift */,
+				7191D86128620E8800EA1722 /* Movie+CoreDataClass.swift */,
+				7191D86228620E8800EA1722 /* Movie+CoreDataProperties.swift */,
+				7191D85628620B7600EA1722 /* CoreDataProject.xcdatamodeld */,
+				7191D8672862128100EA1722 /* CoreDataProjectDataController.swift */,
+			);
+			path = CoreDataProject;
 			sourceTree = "<group>";
 		};
 		719B82CB2835485C00258B63 /* Day39 */ = {
@@ -465,8 +488,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7191D866286210AB00EA1722 /* CoreDataProjectContentView.swift in Sources */,
 				71D7F0A02818327400B31AFC /* Day23View.swift in Sources */,
 				71D7F0D82821777800B31AFC /* Day29View.swift in Sources */,
+				7191D85828620B7600EA1722 /* CoreDataProject.xcdatamodeld in Sources */,
 				7185C2CB285162E200FE1D6E /* Order.swift in Sources */,
 				711DA793285E2394009AB3E7 /* RatingView.swift in Sources */,
 				7185C2C92850E92A00FE1D6E /* CupcakeContentView.swift in Sources */,
@@ -484,6 +509,7 @@
 				719B82DF283D29A500258B63 /* Theme.swift in Sources */,
 				71D7F0A6281AE28400B31AFC /* Day27View.swift in Sources */,
 				7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */,
+				7191D86328620E8800EA1722 /* Movie+CoreDataClass.swift in Sources */,
 				7179CD2A2852392A00676AB7 /* CheckoutView.swift in Sources */,
 				71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */,
 				719B82BF2825862E00258B63 /* Day32View.swift in Sources */,
@@ -492,8 +518,10 @@
 				711DA795285E2820009AB3E7 /* EmojiRatingView.swift in Sources */,
 				71D7F095281055E200B31AFC /* Day19View.swift in Sources */,
 				719B82C228296C9200258B63 /* Day33View.swift in Sources */,
+				7191D8682862128100EA1722 /* CoreDataProjectDataController.swift in Sources */,
 				719B82E8283FD69C00258B63 /* Day43View.swift in Sources */,
 				71D7F0D4281ECC0A00B31AFC /* SleepCalculator.mlmodel in Sources */,
+				7191D86428620E8800EA1722 /* Movie+CoreDataProperties.swift in Sources */,
 				719B82D3283A8FEC00258B63 /* Day40View.swift in Sources */,
 				719B82D7283BDFEC00258B63 /* Bundle-Decodable.swift in Sources */,
 				711DA7972860ACC7009AB3E7 /* DetailView.swift in Sources */,
@@ -718,6 +746,16 @@
 			);
 			currentVersion = 711DA78C2858DC98009AB3E7 /* Bookworm.xcdatamodel */;
 			path = Bookworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		7191D85628620B7600EA1722 /* CoreDataProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7191D85728620B7600EA1722 /* CoreDataProject.xcdatamodel */,
+			);
+			currentVersion = 7191D85728620B7600EA1722 /* CoreDataProject.xcdatamodel */;
+			path = CoreDataProject.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
