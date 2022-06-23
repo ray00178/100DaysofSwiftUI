@@ -231,8 +231,8 @@
 				7191D865286210AB00EA1722 /* CoreDataProjectContentView.swift */,
 				7191D86128620E8800EA1722 /* Movie+CoreDataClass.swift */,
 				7191D86228620E8800EA1722 /* Movie+CoreDataProperties.swift */,
-				7191D85628620B7600EA1722 /* CoreDataProject.xcdatamodeld */,
 				7191D8672862128100EA1722 /* CoreDataProjectDataController.swift */,
+				7191D85628620B7600EA1722 /* CoreDataProject.xcdatamodeld */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
