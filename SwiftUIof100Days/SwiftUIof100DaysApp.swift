@@ -21,8 +21,10 @@ struct SwiftUIof100DaysApp: App {
       /*BookwormContentView()
         .environment(\.managedObjectContext, dataController.container.viewContext)*/
       
-      CoreDataProjectContentView()
-        .environment(\.managedObjectContext, dataController2.container.viewContext)
+      /*CoreDataProjectContentView()
+        .environment(\.managedObjectContext, dataController2.container.viewContext)*/
+      
+      ContentView()
     }
   }
 }
