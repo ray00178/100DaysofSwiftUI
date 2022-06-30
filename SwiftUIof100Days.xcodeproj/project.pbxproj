@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */; };
-		7110C62A280C6271004A0AA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C629280C6271004A0AA9 /* ContentView.swift */; };
+		7110C62A280C6271004A0AA9 /* Day62View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C629280C6271004A0AA9 /* Day62View.swift */; };
 		7110C62C280C6272004A0AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7110C62B280C6272004A0AA9 /* Assets.xcassets */; };
 		7110C62F280C6272004A0AA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7110C62E280C6272004A0AA9 /* Preview Assets.xcassets */; };
 		7110C637280DB700004A0AA9 /* Day16View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C636280DB700004A0AA9 /* Day16View.swift */; };
@@ -37,6 +37,7 @@
 		7191D8742869FF2B00EA1722 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D8702869FF2B00EA1722 /* Country+CoreDataProperties.swift */; };
 		7191D8752869FF2B00EA1722 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D8712869FF2B00EA1722 /* Candy+CoreDataClass.swift */; };
 		7191D8762869FF2B00EA1722 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D8722869FF2B00EA1722 /* Candy+CoreDataProperties.swift */; };
+		7191D87A286DF16600EA1722 /* Day63View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D879286DF16600EA1722 /* Day63View.swift */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -72,7 +73,7 @@
 /* Begin PBXFileReference section */
 		7110C624280C6271004A0AA9 /* SwiftUIof100Days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIof100Days.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIof100DaysApp.swift; sourceTree = "<group>"; };
-		7110C629280C6271004A0AA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7110C629280C6271004A0AA9 /* Day62View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day62View.swift; sourceTree = "<group>"; };
 		7110C62B280C6272004A0AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7110C62E280C6272004A0AA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7110C636280DB700004A0AA9 /* Day16View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16View.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		7191D8702869FF2B00EA1722 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7191D8712869FF2B00EA1722 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7191D8722869FF2B00EA1722 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7191D879286DF16600EA1722 /* Day63View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day63View.swift; sourceTree = "<group>"; };
 		719B82BB282585A400258B63 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		719B82BE2825862E00258B63 /* Day32View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32View.swift; sourceTree = "<group>"; };
 		719B82C128296C9200258B63 /* Day33View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33View.swift; sourceTree = "<group>"; };
@@ -164,10 +166,11 @@
 			isa = PBXGroup;
 			children = (
 				7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */,
-				7110C629280C6271004A0AA9 /* ContentView.swift */,
 				7191D85528620B5800EA1722 /* CoreDataProject */,
 				711DA7882858D7E8009AB3E7 /* Bookworm */,
 				7185C2C52850E63C00FE1D6E /* CupcakeCorner */,
+				7191D878286DF15A00EA1722 /* Day63 */,
+				7191D877286DF12100EA1722 /* Day62 */,
 				7185C2CD2851633900FE1D6E /* Day49 */,
 				719B82FE2847C5B900258B63 /* Day45 */,
 				719B82E92846531100258B63 /* Day44 */,
@@ -256,6 +259,22 @@
 				7191D85628620B7600EA1722 /* CoreDataProject.xcdatamodeld */,
 			);
 			path = CoreDataProject;
+			sourceTree = "<group>";
+		};
+		7191D877286DF12100EA1722 /* Day62 */ = {
+			isa = PBXGroup;
+			children = (
+				7110C629280C6271004A0AA9 /* Day62View.swift */,
+			);
+			path = Day62;
+			sourceTree = "<group>";
+		};
+		7191D878286DF15A00EA1722 /* Day63 */ = {
+			isa = PBXGroup;
+			children = (
+				7191D879286DF16600EA1722 /* Day63View.swift */,
+			);
+			path = Day63;
 			sourceTree = "<group>";
 		};
 		719B82CB2835485C00258B63 /* Day39 */ = {
@@ -526,11 +545,12 @@
 				7191D86C2869F5FC00EA1722 /* Singer+CoreDataProperties.swift in Sources */,
 				71D7F0A3281988AF00B31AFC /* Day26View.swift in Sources */,
 				7185C2C72850E6F500FE1D6E /* UserX.swift in Sources */,
-				7110C62A280C6271004A0AA9 /* ContentView.swift in Sources */,
+				7110C62A280C6271004A0AA9 /* Day62View.swift in Sources */,
 				7191D86B2869F5FC00EA1722 /* Singer+CoreDataClass.swift in Sources */,
 				7110C637280DB700004A0AA9 /* Day16View.swift in Sources */,
 				719B82DF283D29A500258B63 /* Theme.swift in Sources */,
 				71D7F0A6281AE28400B31AFC /* Day27View.swift in Sources */,
+				7191D87A286DF16600EA1722 /* Day63View.swift in Sources */,
 				7191D86E2869F96300EA1722 /* FilteredList.swift in Sources */,
 				7191D8732869FF2B00EA1722 /* Country+CoreDataClass.swift in Sources */,
 				7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */,

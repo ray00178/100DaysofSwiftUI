@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-// MARK: - ContentView
+// MARK: - Day62View
 
-struct ContentView: View {
+struct Day62View: View {
   
   @State private var blurAmount = 0.0
   
@@ -63,6 +63,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    Day62View()
   }
 }
