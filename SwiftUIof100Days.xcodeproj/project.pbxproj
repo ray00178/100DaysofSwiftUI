@@ -38,6 +38,7 @@
 		7191D8752869FF2B00EA1722 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D8712869FF2B00EA1722 /* Candy+CoreDataClass.swift */; };
 		7191D8762869FF2B00EA1722 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D8722869FF2B00EA1722 /* Candy+CoreDataProperties.swift */; };
 		7191D87A286DF16600EA1722 /* Day63View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D879286DF16600EA1722 /* Day63View.swift */; };
+		7191D87C286FB81E00EA1722 /*  ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191D87B286FB81E00EA1722 /*  ImagePicker.swift */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -103,6 +104,7 @@
 		7191D8712869FF2B00EA1722 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7191D8722869FF2B00EA1722 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7191D879286DF16600EA1722 /* Day63View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day63View.swift; sourceTree = "<group>"; };
+		7191D87B286FB81E00EA1722 /*  ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ImagePicker.swift"; sourceTree = "<group>"; };
 		719B82BB282585A400258B63 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		719B82BE2825862E00258B63 /* Day32View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32View.swift; sourceTree = "<group>"; };
 		719B82C128296C9200258B63 /* Day33View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33View.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				7191D879286DF16600EA1722 /* Day63View.swift */,
+				7191D87B286FB81E00EA1722 /*  ImagePicker.swift */,
 			);
 			path = Day63;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				711DA78F2858DD07009AB3E7 /* DataController.swift in Sources */,
 				711DA78D2858DC98009AB3E7 /* Bookworm.xcdatamodeld in Sources */,
 				7191D8752869FF2B00EA1722 /* Candy+CoreDataClass.swift in Sources */,
+				7191D87C286FB81E00EA1722 /*  ImagePicker.swift in Sources */,
 				711DA791285A39C8009AB3E7 /* AddBookView.swift in Sources */,
 				719B82C5282EBC0100258B63 /* Day36View.swift in Sources */,
 				719B82E4283FD01400258B63 /* AstronautView.swift in Sources */,

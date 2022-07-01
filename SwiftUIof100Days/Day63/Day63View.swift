@@ -14,16 +14,34 @@ import CoreImage.CIFilterBuiltins
 struct Day63View: View {
   
   @State private var image: Image?
+  @State private var showingImagePicker = false
   
   var body: some View {
-    VStack {
+    
+    // Wrapping a UIViewController in a SwiftUI view
+    VStack(spacing: 20.0) {
+      image?
+        .resizable()
+        .scaledToFit()
+      
+      Button("Select Image") {
+        showingImagePicker = true
+      }
+      .padding()
+    }
+    .sheet(isPresented: $showingImagePicker) {
+      ImagePicker()
+    }
+    
+    // Integrating Core Image with SwiftUI
+    /*VStack {
       image?
         .resizable()
         .scaledToFit()
     }
     .onAppear {
       loadImage()
-    }
+    }*/
   }
   
   func loadImage() {
