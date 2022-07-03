@@ -80,6 +80,9 @@ struct Day63View: View {
   func loadImageFromPicker() {
     guard let inputImage = inputImage else { return }
     image = Image(uiImage: inputImage)
+    
+    let imageServer = ImageServer()
+    imageServer.writeToPhotoAlbum(image: inputImage)
   }
 }
 
