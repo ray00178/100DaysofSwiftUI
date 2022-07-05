@@ -10,7 +10,13 @@ import UIKit
 
 // MARK: - ImageServer
 
+typealias DataClosure<T> = ((T) -> Swift.Void)
+typealias EmptyClosure = (() -> Swift.Void)
+
 class ImageServer: NSObject {
+  
+  var successHandler: EmptyClosure?
+  var errorHandler: DataClosure<Error>?
   
   func writeToPhotoAlbum(image: UIImage) {
     UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
@@ -21,8 +27,12 @@ class ImageServer: NSObject {
 
 extension ImageServer {
   @objc private func saveCompleted(_: UIImage,
-                                   didFinishSavingWithError _: Error?,
+                                   didFinishSavingWithError error: Error?,
                                    contextInfo _: UnsafeRawPointer) {
-    print("Save finished!")
+    if let error {
+      errorHandler?(error)
+    } else {
+      successHandler?()
+    }
   }
 }
