@@ -108,7 +108,7 @@ struct Flower: Shape {
 struct ColorCyclingCircle: View {
     
     var amount = 0.0
-    var steps = 100
+  var steps = 100
     
     var body: some View {
         ZStack {

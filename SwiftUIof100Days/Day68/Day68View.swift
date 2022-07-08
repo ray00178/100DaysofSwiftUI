@@ -10,6 +10,9 @@ import SwiftUI
 // MARK: - Day68View
 
 struct Day68View: View {
+  
+  @State private var loadingState = LoadingState.loading
+
   private let models: [Day68Model] = [
     Day68Model(name: "Ray", age: 34),
     Day68Model(name: "Aida", age: 31),
@@ -18,21 +21,34 @@ struct Day68View: View {
   ].sorted()
 
   var body: some View {
-    List(models) { model in
-      Text("\(model.name) (\(model.age))")
-        .foregroundColor(model.age > 30 ? .red : .blue)
-        .onTapGesture {
-          let str = model.name + " \(model.age)"
-          let url = getDocumentDictionary().appendingPathComponent("temp.txt", conformingTo: .text)
+    ScrollView {
+      LazyVStack(alignment: .leading, spacing: 8.0) {
+        ForEach(models) { model in
+          Text("\(model.name) (\(model.age))")
+            .padding(12.0)
+            .foregroundColor(model.age > 30 ? .red : .blue)
+            .onTapGesture {
+              loadingState = LoadingState.allCases.randomElement() ?? .loading
 
-          do {
-            try str.write(to: url, atomically: true, encoding: .utf8)
-            let input = try String(contentsOf: url)
-            print(input)
-          } catch {
-            print("Error: \(error.localizedDescription)")
-          }
+              /* let str = model.name + " \(model.age)"
+               let url = getDocumentDictionary().appendingPathComponent("temp.txt", conformingTo: .text)
+
+               do {
+                 try str.write(to: url, atomically: true, encoding: .utf8)
+                 let input = try String(contentsOf: url)
+                 print(input)
+               } catch {
+                 print("Error: \(error.localizedDescription)")
+               } */
+            }
         }
+        
+        Spacer()
+        
+        Text(loadingState.message)
+          .padding(20.0)
+          .font(.headline)
+      }
     }
   }
 
@@ -60,5 +76,27 @@ struct Day68Model: Identifiable, Comparable {
 
   static func < (lhs: Day68Model, rhs: Day68Model) -> Bool {
     lhs.age > rhs.age
+  }
+}
+
+// MARK: - LoadingState
+
+enum LoadingState: CaseIterable {
+  
+  case loading
+
+  case success
+
+  case failure
+  
+  var message: String {
+    switch self {
+    case .loading:
+      return "Loading..."
+    case .success:
+      return "🎉 Success"
+    case .failure:
+      return "🌚 Failure"
+    }
   }
 }
