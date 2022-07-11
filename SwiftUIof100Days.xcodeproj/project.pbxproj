@@ -10,6 +10,7 @@
 		7102D1192871E843001077B7 /*  ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102D1182871E843001077B7 /*  ImageSaver.swift */; };
 		7102D11C2873326D001077B7 /* Day65View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102D11B2873326D001077B7 /* Day65View.swift */; };
 		7102D11F28772436001077B7 /* Day68View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102D11E28772436001077B7 /* Day68View.swift */; };
+		7102D122287C71FB001077B7 /* Day69View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102D121287C71FB001077B7 /* Day69View.swift */; };
 		7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */; };
 		7110C62A280C6271004A0AA9 /* Day62View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C629280C6271004A0AA9 /* Day62View.swift */; };
 		7110C62C280C6272004A0AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7110C62B280C6272004A0AA9 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		7102D1182871E843001077B7 /*  ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ImageSaver.swift"; sourceTree = "<group>"; };
 		7102D11B2873326D001077B7 /* Day65View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day65View.swift; sourceTree = "<group>"; };
 		7102D11E28772436001077B7 /* Day68View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day68View.swift; sourceTree = "<group>"; };
+		7102D121287C71FB001077B7 /* Day69View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day69View.swift; sourceTree = "<group>"; };
 		7110C624280C6271004A0AA9 /* SwiftUIof100Days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIof100Days.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIof100DaysApp.swift; sourceTree = "<group>"; };
 		7110C629280C6271004A0AA9 /* Day62View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day62View.swift; sourceTree = "<group>"; };
@@ -170,6 +172,14 @@
 			path = Day68;
 			sourceTree = "<group>";
 		};
+		7102D120287C71E8001077B7 /* Day69 */ = {
+			isa = PBXGroup;
+			children = (
+				7102D121287C71FB001077B7 /* Day69View.swift */,
+			);
+			path = Day69;
+			sourceTree = "<group>";
+		};
 		7110C61B280C6271004A0AA9 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 				7191D85528620B5800EA1722 /* CoreDataProject */,
 				711DA7882858D7E8009AB3E7 /* Bookworm */,
 				7185C2C52850E63C00FE1D6E /* CupcakeCorner */,
+				7102D120287C71E8001077B7 /* Day69 */,
 				7102D11D28772425001077B7 /* Day68 */,
 				7102D11A2873325B001077B7 /* Day65 */,
 				7191D878286DF15A00EA1722 /* Day63 */,
@@ -602,6 +613,7 @@
 				719B82D7283BDFEC00258B63 /* Bundle-Decodable.swift in Sources */,
 				711DA7972860ACC7009AB3E7 /* DetailView.swift in Sources */,
 				711DA78F2858DD07009AB3E7 /* DataController.swift in Sources */,
+				7102D122287C71FB001077B7 /* Day69View.swift in Sources */,
 				711DA78D2858DC98009AB3E7 /* Bookworm.xcdatamodeld in Sources */,
 				7191D8752869FF2B00EA1722 /* Candy+CoreDataClass.swift in Sources */,
 				7191D87C286FB81E00EA1722 /*  ImagePicker.swift in Sources */,
