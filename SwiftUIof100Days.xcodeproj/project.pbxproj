@@ -80,6 +80,7 @@
 		7102D11B2873326D001077B7 /* Day65View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day65View.swift; sourceTree = "<group>"; };
 		7102D11E28772436001077B7 /* Day68View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day68View.swift; sourceTree = "<group>"; };
 		7102D121287C71FB001077B7 /* Day69View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day69View.swift; sourceTree = "<group>"; };
+		7102D123287F1603001077B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7110C624280C6271004A0AA9 /* SwiftUIof100Days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIof100Days.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIof100DaysApp.swift; sourceTree = "<group>"; };
 		7110C629280C6271004A0AA9 /* Day62View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day62View.swift; sourceTree = "<group>"; };
@@ -199,6 +200,7 @@
 		7110C626280C6271004A0AA9 /* SwiftUIof100Days */ = {
 			isa = PBXGroup;
 			children = (
+				7102D123287F1603001077B7 /* Info.plist */,
 				7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */,
 				7191D85528620B5800EA1722 /* CoreDataProject */,
 				711DA7882858D7E8009AB3E7 /* Bookworm */,
@@ -760,6 +762,8 @@
 				DEVELOPMENT_TEAM = ZGW479ZTBD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIof100Days/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -793,6 +797,8 @@
 				DEVELOPMENT_TEAM = ZGW479ZTBD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIof100Days/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
