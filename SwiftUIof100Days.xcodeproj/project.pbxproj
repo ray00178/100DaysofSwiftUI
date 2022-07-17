@@ -11,6 +11,7 @@
 		7102D11C2873326D001077B7 /* Day65View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102D11B2873326D001077B7 /* Day65View.swift */; };
 		7102D11F28772436001077B7 /* Day68View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102D11E28772436001077B7 /* Day68View.swift */; };
 		7102D122287C71FB001077B7 /* Day69View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102D121287C71FB001077B7 /* Day69View.swift */; };
+		7102D128287F19AB001077B7 /* Day70View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102D127287F19AB001077B7 /* Day70View.swift */; };
 		7110C628280C6271004A0AA9 /* SwiftUIof100DaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */; };
 		7110C62A280C6271004A0AA9 /* Day62View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C629280C6271004A0AA9 /* Day62View.swift */; };
 		7110C62C280C6272004A0AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7110C62B280C6272004A0AA9 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		719B82E8283FD69C00258B63 /* Day43View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82E7283FD69C00258B63 /* Day43View.swift */; };
 		719B82EB2846532000258B63 /* Day44View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82EA2846532000258B63 /* Day44View.swift */; };
 		719B83002847C5C400258B63 /* Day45View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82FF2847C5C400258B63 /* Day45View.swift */; };
+		71D6927C2884516800B8560E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6927B2884516800B8560E /* EditView.swift */; };
 		71D7F08F280EFF8B00B31AFC /* Day17View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F08E280EFF8B00B31AFC /* Day17View.swift */; };
 		71D7F095281055E200B31AFC /* Day19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F094281055E200B31AFC /* Day19View.swift */; };
 		71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F09728105D7F00B31AFC /* Day20View.swift */; };
@@ -80,7 +82,8 @@
 		7102D11B2873326D001077B7 /* Day65View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day65View.swift; sourceTree = "<group>"; };
 		7102D11E28772436001077B7 /* Day68View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day68View.swift; sourceTree = "<group>"; };
 		7102D121287C71FB001077B7 /* Day69View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day69View.swift; sourceTree = "<group>"; };
-		7102D123287F1603001077B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7102D125287F1948001077B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7102D127287F19AB001077B7 /* Day70View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day70View.swift; sourceTree = "<group>"; };
 		7110C624280C6271004A0AA9 /* SwiftUIof100Days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIof100Days.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIof100DaysApp.swift; sourceTree = "<group>"; };
 		7110C629280C6271004A0AA9 /* Day62View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day62View.swift; sourceTree = "<group>"; };
@@ -133,6 +136,7 @@
 		719B82E7283FD69C00258B63 /* Day43View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day43View.swift; sourceTree = "<group>"; };
 		719B82EA2846532000258B63 /* Day44View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day44View.swift; sourceTree = "<group>"; };
 		719B82FF2847C5C400258B63 /* Day45View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day45View.swift; sourceTree = "<group>"; };
+		71D6927B2884516800B8560E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		71D7F08E280EFF8B00B31AFC /* Day17View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17View.swift; sourceTree = "<group>"; };
 		71D7F094281055E200B31AFC /* Day19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19View.swift; sourceTree = "<group>"; };
 		71D7F09728105D7F00B31AFC /* Day20View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day20View.swift; sourceTree = "<group>"; };
@@ -181,6 +185,15 @@
 			path = Day69;
 			sourceTree = "<group>";
 		};
+		7102D124287F18DC001077B7 /* Day70 */ = {
+			isa = PBXGroup;
+			children = (
+				7102D127287F19AB001077B7 /* Day70View.swift */,
+				71D6927B2884516800B8560E /* EditView.swift */,
+			);
+			path = Day70;
+			sourceTree = "<group>";
+		};
 		7110C61B280C6271004A0AA9 = {
 			isa = PBXGroup;
 			children = (
@@ -200,11 +213,12 @@
 		7110C626280C6271004A0AA9 /* SwiftUIof100Days */ = {
 			isa = PBXGroup;
 			children = (
-				7102D123287F1603001077B7 /* Info.plist */,
+				7102D125287F1948001077B7 /* Info.plist */,
 				7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */,
 				7191D85528620B5800EA1722 /* CoreDataProject */,
 				711DA7882858D7E8009AB3E7 /* Bookworm */,
 				7185C2C52850E63C00FE1D6E /* CupcakeCorner */,
+				7102D124287F18DC001077B7 /* Day70 */,
 				7102D120287C71E8001077B7 /* Day69 */,
 				7102D11D28772425001077B7 /* Day68 */,
 				7102D11A2873325B001077B7 /* Day65 */,
@@ -583,6 +597,7 @@
 				719B82E2283D2DD500258B63 /* MissionView.swift in Sources */,
 				719B82D5283BDFC000258B63 /* Astronaut.swift in Sources */,
 				719B82CD2835486F00258B63 /* Day39View.swift in Sources */,
+				7102D128287F19AB001077B7 /* Day70View.swift in Sources */,
 				7191D86C2869F5FC00EA1722 /* Singer+CoreDataProperties.swift in Sources */,
 				71D7F0A3281988AF00B31AFC /* Day26View.swift in Sources */,
 				7185C2C72850E6F500FE1D6E /* UserX.swift in Sources */,
@@ -620,6 +635,7 @@
 				7191D8752869FF2B00EA1722 /* Candy+CoreDataClass.swift in Sources */,
 				7191D87C286FB81E00EA1722 /*  ImagePicker.swift in Sources */,
 				711DA791285A39C8009AB3E7 /* AddBookView.swift in Sources */,
+				71D6927C2884516800B8560E /* EditView.swift in Sources */,
 				7102D11C2873326D001077B7 /* Day65View.swift in Sources */,
 				719B82C5282EBC0100258B63 /* Day36View.swift in Sources */,
 				719B82E4283FD01400258B63 /* AstronautView.swift in Sources */,
