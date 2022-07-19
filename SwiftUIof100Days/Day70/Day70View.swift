@@ -11,13 +11,12 @@ import SwiftUI
 // MARK: - Day70View
 
 struct Day70View: View {
-  @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
-  @State private var locations: [Day70View.Location] = []
-  @State private var seletedPlace: Location?
+  @StateObject var viewModel: ViewModel = .init()
 
   var body: some View {
     ZStack {
-      Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
+      Map(coordinateRegion: $viewModel.mapRegion,
+          annotationItems: viewModel.locations) { location in
         MapAnnotation(coordinate: location.coordinate) {
           VStack {
             Image(systemName: "star.circle")
@@ -31,7 +30,7 @@ struct Day70View: View {
               .fixedSize()
           }
           .onTapGesture {
-            seletedPlace = location
+            viewModel.selectedPlace = location
           }
         }
       }
@@ -47,9 +46,7 @@ struct Day70View: View {
         HStack {
           Spacer()
           Button {
-            let new = Location(id: UUID(), name: "New Location", description: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
-
-            locations.append(new)
+            viewModel.addLocation()
           } label: {
             Image(systemName: "plus")
           }
@@ -62,11 +59,9 @@ struct Day70View: View {
         }
       }
     }
-    .sheet(item: $seletedPlace) { place in
+    .sheet(item: $viewModel.selectedPlace) { place in
       EditView(location: place) { newLocation in
-        if let index = locations.firstIndex(of: place) {
-          locations[index] = newLocation
-        }
+        viewModel.upload(location: newLocation)
       }
     }
   }
@@ -94,7 +89,7 @@ extension Day70View {
       CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 
-    static let example = Location(id: UUID(), name: "Buckingham Palace", description: "Where Queen Elizabeth lives with her dorgis.", latitude: 51.501, longitude: -0.141)
+    static let example = Day70View.Location(id: UUID(), name: "Buckingham Palace", description: "Where Queen Elizabeth lives with her dorgis.", latitude: 51.501, longitude: -0.141)
 
     static func == (lhs: Location, rhs: Location) -> Bool {
       lhs.id == rhs.id
