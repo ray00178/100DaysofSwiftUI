@@ -52,6 +52,7 @@
 		719A78752891771F00F584E5 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A78742891771F00F584E5 /* LocationFetcher.swift */; };
 		719A78782892CA5500F584E5 /* Day79View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A78772892CA5500F584E5 /* Day79View.swift */; };
 		719A787A2894233700F584E5 /* DelayedUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A78792894233700F584E5 /* DelayedUpdater.swift */; };
+		719A787C289821F600F584E5 /* Day81View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A787B289821F600F584E5 /* Day81View.swift */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -133,6 +134,7 @@
 		719A78742891771F00F584E5 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		719A78772892CA5500F584E5 /* Day79View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day79View.swift; sourceTree = "<group>"; };
 		719A78792894233700F584E5 /* DelayedUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedUpdater.swift; sourceTree = "<group>"; };
+		719A787B289821F600F584E5 /* Day81View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day81View.swift; sourceTree = "<group>"; };
 		719B82BB282585A400258B63 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		719B82BE2825862E00258B63 /* Day32View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32View.swift; sourceTree = "<group>"; };
 		719B82C128296C9200258B63 /* Day33View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33View.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 			children = (
 				719A78772892CA5500F584E5 /* Day79View.swift */,
 				719A78792894233700F584E5 /* DelayedUpdater.swift */,
+				719A787B289821F600F584E5 /* Day81View.swift */,
 			);
 			path = "Hot Prospects";
 			sourceTree = "<group>";
@@ -696,6 +699,7 @@
 				711DA78F2858DD07009AB3E7 /* DataController.swift in Sources */,
 				7102D122287C71FB001077B7 /* Day69View.swift in Sources */,
 				711DA78D2858DC98009AB3E7 /* Bookworm.xcdatamodeld in Sources */,
+				719A787C289821F600F584E5 /* Day81View.swift in Sources */,
 				7191D8752869FF2B00EA1722 /* Candy+CoreDataClass.swift in Sources */,
 				7191D87C286FB81E00EA1722 /*  ImagePicker.swift in Sources */,
 				711DA791285A39C8009AB3E7 /* AddBookView.swift in Sources */,
