@@ -6,14 +6,56 @@
 //
 
 import SwiftUI
+import UserNotifications
+import SamplePackage
 
 // MARK: - Day81View
 
 struct Day81View: View {
   @State private var backgroundColor = Color.red
-
+  
+  let possibleNumbers = Array(1...60)
+  
+  var result: String {
+    let selected = possibleNumbers.random(7).sorted()
+    let strings = selected.map(String.init)
+    return strings.joined(separator: ", ")
+  }
+  
   var body: some View {
-    List {
+    
+    VStack(spacing: 20) {
+      Button("Request Permission") {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+          if success {
+            print("Success")
+          } else if let error = error {
+            print(error.localizedDescription)
+          }
+        }
+      }
+      .padding()
+      
+      Button("Scedule Notification") {
+        let content = UNMutableNotificationContent()
+        content.title = "Feed the cat"
+        content.subtitle = "It looks hungry"
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request)
+      }
+      .padding()
+      
+      Text(result)
+    }
+    
+    
+    //
+    /*List {
       Text("Taylor Swift")
         .swipeActions {
           Button(role: .destructive) {
@@ -30,7 +72,7 @@ struct Day81View: View {
           }
           .tint(.orange)
         }
-    }
+    }*/
 
     // Creating context menus
     /* VStack {

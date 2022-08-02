@@ -53,6 +53,10 @@
 		719A78782892CA5500F584E5 /* Day79View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A78772892CA5500F584E5 /* Day79View.swift */; };
 		719A787A2894233700F584E5 /* DelayedUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A78792894233700F584E5 /* DelayedUpdater.swift */; };
 		719A787C289821F600F584E5 /* Day81View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A787B289821F600F584E5 /* Day81View.swift */; };
+		719A787E2899688000F584E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A787D2899688000F584E5 /* AppDelegate.swift */; };
+		719A788128996A0600F584E5 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 719A788028996A0600F584E5 /* SamplePackage */; };
+		719A788328996C1500F584E5 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A788228996C1500F584E5 /* ProspectsView.swift */; };
+		719A788528996C6E00F584E5 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A788428996C6E00F584E5 /* MeView.swift */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -135,6 +139,9 @@
 		719A78772892CA5500F584E5 /* Day79View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day79View.swift; sourceTree = "<group>"; };
 		719A78792894233700F584E5 /* DelayedUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedUpdater.swift; sourceTree = "<group>"; };
 		719A787B289821F600F584E5 /* Day81View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day81View.swift; sourceTree = "<group>"; };
+		719A787D2899688000F584E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		719A788228996C1500F584E5 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		719A788428996C6E00F584E5 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		719B82BB282585A400258B63 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		719B82BE2825862E00258B63 /* Day32View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32View.swift; sourceTree = "<group>"; };
 		719B82C128296C9200258B63 /* Day33View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33View.swift; sourceTree = "<group>"; };
@@ -173,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719A788128996A0600F584E5 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +242,7 @@
 			children = (
 				7102D125287F1948001077B7 /* Info.plist */,
 				7110C627280C6271004A0AA9 /* SwiftUIof100DaysApp.swift */,
+				719A787D2899688000F584E5 /* AppDelegate.swift */,
 				7191D85528620B5800EA1722 /* CoreDataProject */,
 				711DA7882858D7E8009AB3E7 /* Bookworm */,
 				7185C2C52850E63C00FE1D6E /* CupcakeCorner */,
@@ -387,6 +396,8 @@
 				719A78772892CA5500F584E5 /* Day79View.swift */,
 				719A78792894233700F584E5 /* DelayedUpdater.swift */,
 				719A787B289821F600F584E5 /* Day81View.swift */,
+				719A788228996C1500F584E5 /* ProspectsView.swift */,
+				719A788428996C6E00F584E5 /* MeView.swift */,
 			);
 			path = "Hot Prospects";
 			sourceTree = "<group>";
@@ -584,6 +595,9 @@
 			dependencies = (
 			);
 			name = SwiftUIof100Days;
+			packageProductDependencies = (
+				719A788028996A0600F584E5 /* SamplePackage */,
+			);
 			productName = SwiftUIof100Days;
 			productReference = 7110C624280C6271004A0AA9 /* SwiftUIof100Days.app */;
 			productType = "com.apple.product-type.application";
@@ -612,6 +626,9 @@
 				Base,
 			);
 			mainGroup = 7110C61B280C6271004A0AA9;
+			packageReferences = (
+				719A787F28996A0600F584E5 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			productRefGroup = 7110C625280C6271004A0AA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -650,6 +667,7 @@
 				711DA793285E2394009AB3E7 /* RatingView.swift in Sources */,
 				719A78752891771F00F584E5 /* LocationFetcher.swift in Sources */,
 				7185C2C92850E92A00FE1D6E /* CupcakeContentView.swift in Sources */,
+				719A788328996C1500F584E5 /* ProspectsView.swift in Sources */,
 				719B82DD283D196E00258B63 /* Mission.swift in Sources */,
 				719B82CA2833F6E600258B63 /* AddView.swift in Sources */,
 				711DA78A2858D805009AB3E7 /* BookwormContentView.swift in Sources */,
@@ -690,6 +708,7 @@
 				7191D8682862128100EA1722 /* CoreDataProjectDataController.swift in Sources */,
 				719B82E8283FD69C00258B63 /* Day43View.swift in Sources */,
 				71D7F0D4281ECC0A00B31AFC /* SleepCalculator.mlmodel in Sources */,
+				719A787E2899688000F584E5 /* AppDelegate.swift in Sources */,
 				7191D86428620E8800EA1722 /* Movie+CoreDataProperties.swift in Sources */,
 				719B82D3283A8FEC00258B63 /* Day40View.swift in Sources */,
 				719A7870288ED2C000F584E5 /* Day74View.swift in Sources */,
@@ -704,6 +723,7 @@
 				7191D87C286FB81E00EA1722 /*  ImagePicker.swift in Sources */,
 				711DA791285A39C8009AB3E7 /* AddBookView.swift in Sources */,
 				71D6927C2884516800B8560E /* EditView.swift in Sources */,
+				719A788528996C6E00F584E5 /* MeView.swift in Sources */,
 				7102D11C2873326D001077B7 /* Day65View.swift in Sources */,
 				719B82C5282EBC0100258B63 /* Day36View.swift in Sources */,
 				719B82E4283FD01400258B63 /* AstronautView.swift in Sources */,
@@ -931,6 +951,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		719A787F28996A0600F584E5 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		719A788028996A0600F584E5 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719A787F28996A0600F584E5 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		711DA78B2858DC98009AB3E7 /* Bookworm.xcdatamodeld */ = {

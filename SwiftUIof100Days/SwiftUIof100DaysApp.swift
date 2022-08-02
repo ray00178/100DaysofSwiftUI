@@ -10,6 +10,9 @@ import SwiftUI
 @main
 struct SwiftUIof100DaysApp: App {
   
+  // Reference = https://ishtiz.com/swift/how-to-show-local-notification-when-the-app-is-foreground
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+  
   /// For Bookworm project
   @StateObject private var dataController = DataController()
   
@@ -24,7 +27,7 @@ struct SwiftUIof100DaysApp: App {
       /*CoreDataProjectContentView()
         .environment(\.managedObjectContext, dataController2.container.viewContext)*/
       
-      Day81View()
+      MeView()
     }
   }
 }
