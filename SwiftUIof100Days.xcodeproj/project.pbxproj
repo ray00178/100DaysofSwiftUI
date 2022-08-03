@@ -57,6 +57,8 @@
 		719A788128996A0600F584E5 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 719A788028996A0600F584E5 /* SamplePackage */; };
 		719A788328996C1500F584E5 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A788228996C1500F584E5 /* ProspectsView.swift */; };
 		719A788528996C6E00F584E5 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A788428996C6E00F584E5 /* MeView.swift */; };
+		719A7887289AB5A600F584E5 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A7886289AB5A600F584E5 /* Prospect.swift */; };
+		719A7889289AB64F00F584E5 /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A7888289AB64F00F584E5 /* Prospects.swift */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -142,6 +144,8 @@
 		719A787D2899688000F584E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719A788228996C1500F584E5 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		719A788428996C6E00F584E5 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		719A7886289AB5A600F584E5 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		719A7888289AB64F00F584E5 /* Prospects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospects.swift; sourceTree = "<group>"; };
 		719B82BB282585A400258B63 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		719B82BE2825862E00258B63 /* Day32View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32View.swift; sourceTree = "<group>"; };
 		719B82C128296C9200258B63 /* Day33View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33View.swift; sourceTree = "<group>"; };
@@ -398,6 +402,8 @@
 				719A787B289821F600F584E5 /* Day81View.swift */,
 				719A788228996C1500F584E5 /* ProspectsView.swift */,
 				719A788428996C6E00F584E5 /* MeView.swift */,
+				719A7886289AB5A600F584E5 /* Prospect.swift */,
+				719A7888289AB64F00F584E5 /* Prospects.swift */,
 			);
 			path = "Hot Prospects";
 			sourceTree = "<group>";
@@ -716,10 +722,12 @@
 				719B82D7283BDFEC00258B63 /* Bundle-Decodable.swift in Sources */,
 				711DA7972860ACC7009AB3E7 /* DetailView.swift in Sources */,
 				711DA78F2858DD07009AB3E7 /* DataController.swift in Sources */,
+				719A7889289AB64F00F584E5 /* Prospects.swift in Sources */,
 				7102D122287C71FB001077B7 /* Day69View.swift in Sources */,
 				711DA78D2858DC98009AB3E7 /* Bookworm.xcdatamodeld in Sources */,
 				719A787C289821F600F584E5 /* Day81View.swift in Sources */,
 				7191D8752869FF2B00EA1722 /* Candy+CoreDataClass.swift in Sources */,
+				719A7887289AB5A600F584E5 /* Prospect.swift in Sources */,
 				7191D87C286FB81E00EA1722 /*  ImagePicker.swift in Sources */,
 				711DA791285A39C8009AB3E7 /* AddBookView.swift in Sources */,
 				71D6927C2884516800B8560E /* EditView.swift in Sources */,

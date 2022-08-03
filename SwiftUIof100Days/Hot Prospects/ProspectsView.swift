@@ -10,7 +10,8 @@ import SwiftUI
 // MARK: - ProspectsView
 
 struct ProspectsView: View {
-  
+  @EnvironmentObject var prospects: Prospects
+
   let filter: FilterType
 
   var title: String {
@@ -26,10 +27,40 @@ struct ProspectsView: View {
     }
   }
 
+  var filteredProspects: [Prospect] {
+    switch filter {
+    case .none, .me:
+      return prospects.people
+    case .contacted:
+      return prospects.people.filter(\.isContacted)
+    case .uncontacted:
+      return prospects.people.filter { !$0.isContacted }
+    }
+  }
+
   var body: some View {
     NavigationView {
-      Text("Hello world")
-        .navigationTitle(title)
+      List {
+        ForEach(filteredProspects) { prospects in
+          VStack(alignment: .leading) {
+            Text(prospects.name)
+              .font(.headline)
+            Text(prospects.emailAddress)
+              .foregroundColor(.secondary)
+          }
+        }
+      }
+      .navigationTitle(title)
+      .toolbar {
+        Button {
+          let prospect = Prospect()
+          prospect.name = "Paul Hudson"
+          prospect.emailAddress = "paul@hackingwithswift.com"
+          prospects.people.append(prospect)
+        } label: {
+          Label("Scan", systemImage: "qrcode.viewfinder")
+        }
+      }
     }
   }
 }
@@ -39,18 +70,18 @@ struct ProspectsView: View {
 struct ProspectsView_Previews: PreviewProvider {
   static var previews: some View {
     ProspectsView(filter: .none)
+      .environmentObject(Prospects())
   }
 }
 
 extension ProspectsView {
   enum FilterType {
-    
     case none
 
     case contacted
 
     case uncontacted
-    
+
     case me
   }
 }
