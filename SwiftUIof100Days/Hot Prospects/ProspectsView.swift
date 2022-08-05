@@ -5,12 +5,15 @@
 //  Created by Ray on 2022/8/2.
 //
 
+import CodeScanner
 import SwiftUI
 
 // MARK: - ProspectsView
 
 struct ProspectsView: View {
   @EnvironmentObject var prospects: Prospects
+
+  @State private var isShowingScanner = false
 
   let filter: FilterType
 
@@ -41,26 +44,70 @@ struct ProspectsView: View {
   var body: some View {
     NavigationView {
       List {
-        ForEach(filteredProspects) { prospects in
+        ForEach(filteredProspects) { prospect in
           VStack(alignment: .leading) {
-            Text(prospects.name)
+            Text(prospect.name)
               .font(.headline)
-            Text(prospects.emailAddress)
+            Text(prospect.emailAddress)
               .foregroundColor(.secondary)
+          }
+          .swipeActions {
+            if prospect.isContacted {
+              Button {
+                prospects.toggle(prospect)
+              } label: {
+                Label("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark")
+              }
+              .tint(.blue)
+            } else {
+              Button {
+                prospects.toggle(prospect)
+              } label: {
+                Label("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark")
+              }
+              .tint(.green)
+            }
+
+            // Remove
+            /* Button(role: .destructive) {
+               prospects.people.removeAll { $0.id == prospect.id }
+             } label: {
+               Label("Delete", systemImage: "music.circle")
+             } */
           }
         }
       }
       .navigationTitle(title)
       .toolbar {
         Button {
-          let prospect = Prospect()
-          prospect.name = "Paul Hudson"
-          prospect.emailAddress = "paul@hackingwithswift.com"
-          prospects.people.append(prospect)
+          isShowingScanner = true
         } label: {
           Label("Scan", systemImage: "qrcode.viewfinder")
         }
       }
+      .sheet(isPresented: $isShowingScanner) {
+        CodeScannerView(codeTypes: [.qr],
+                        simulatedData: "Paul Hudson\npaul@hackingwithswift.com",
+                        completion: handleScan)
+      }
+    }
+  }
+
+  func handleScan(result: Swift.Result<ScanResult, ScanError>) {
+    isShowingScanner = false
+
+    switch result {
+    case let .success(scanResult):
+      let details = scanResult.string.components(separatedBy: "\n")
+      guard details.count == 2 else { return }
+
+      let person = Prospect()
+      person.name = details[0]
+      person.emailAddress = details[1]
+
+      prospects.people.append(person)
+    case let .failure(error):
+      print("Scanning failed: \(error.localizedDescription)")
     }
   }
 }

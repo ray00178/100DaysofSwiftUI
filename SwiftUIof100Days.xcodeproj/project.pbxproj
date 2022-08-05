@@ -59,6 +59,7 @@
 		719A788528996C6E00F584E5 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A788428996C6E00F584E5 /* MeView.swift */; };
 		719A7887289AB5A600F584E5 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A7886289AB5A600F584E5 /* Prospect.swift */; };
 		719A7889289AB64F00F584E5 /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A7888289AB64F00F584E5 /* Prospects.swift */; };
+		719A788C289D625800F584E5 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 719A788B289D625800F584E5 /* CodeScanner */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -184,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719A788C289D625800F584E5 /* CodeScanner in Frameworks */,
 				719A788128996A0600F584E5 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +605,7 @@
 			name = SwiftUIof100Days;
 			packageProductDependencies = (
 				719A788028996A0600F584E5 /* SamplePackage */,
+				719A788B289D625800F584E5 /* CodeScanner */,
 			);
 			productName = SwiftUIof100Days;
 			productReference = 7110C624280C6271004A0AA9 /* SwiftUIof100Days.app */;
@@ -634,6 +637,7 @@
 			mainGroup = 7110C61B280C6271004A0AA9;
 			packageReferences = (
 				719A787F28996A0600F584E5 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+				719A788A289D625800F584E5 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 7110C625280C6271004A0AA9 /* Products */;
 			projectDirPath = "";
@@ -875,6 +879,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIof100Days/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow to use";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow to use";
@@ -912,6 +917,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIof100Days/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow to use";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow to use";
@@ -969,6 +975,14 @@
 				version = 1.0.0;
 			};
 		};
+		719A788A289D625800F584E5 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -976,6 +990,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 719A787F28996A0600F584E5 /* XCRemoteSwiftPackageReference "SamplePackage" */;
 			productName = SamplePackage;
+		};
+		719A788B289D625800F584E5 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 719A788A289D625800F584E5 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 
