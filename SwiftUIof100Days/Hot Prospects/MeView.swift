@@ -13,6 +13,8 @@ import SwiftUI
 struct MeView: View {
   @StateObject var prospects = Prospects()
 
+  @State private var qrCode = UIImage()
+  
   @State var name = "Anonymous"
   @State var emailAddress = "your@email.com"
 
@@ -20,25 +22,6 @@ struct MeView: View {
   let filter = CIFilter.qrCodeGenerator()
 
   var body: some View {
-    /* NavigationView {
-       Form {
-         TextField("Name", text: $name)
-           .textContentType(.name)
-           .font(.title)
-
-         TextField("Email", text: $emailAddress)
-           .textContentType(.emailAddress)
-           .font(.title)
-
-         Image(uiImage: generateQRCode(from: "\(name)\n\(emailAddress)"))
-           .resizable()
-           .interpolation(.none)
-           .scaledToFit()
-           .frame(width: 200, height: 200)
-       }
-       .navigationTitle("Your Code")
-     } */
-
     TabView {
       ProspectsView(filter: .none)
         .tabItem {
@@ -52,10 +35,42 @@ struct MeView: View {
         .tabItem {
           Label("Uncontacted", systemImage: "questionmark.diamond")
         }
-      ProspectsView(filter: .me)
-        .tabItem {
-          Label("Me", systemImage: "person.crop.square")
+      NavigationView {
+        Form {
+          TextField("Name", text: $name)
+            .textContentType(.name)
+            .font(.title)
+
+          TextField("Email", text: $emailAddress)
+            .textContentType(.emailAddress)
+            .font(.title)
+          
+          Image(uiImage: generateQRCode(from: "\(name)\n\(emailAddress)"))
+            .resizable()
+            .interpolation(.none)
+            .scaledToFit()
+            .frame(width: 200, height: 200)
+            .contextMenu {
+              Button {
+                let imageServer = ImageServer()
+                imageServer.writeToPhotoAlbum(image: qrCode)
+              } label: {
+                Label("Save to Photos", systemImage: "square.and.arrow.down")
+              }
+            }
         }
+        .navigationTitle("Profile")
+        .onAppear(perform: updateCode)
+        .onChange(of: name) { _ in
+          updateCode()
+        }
+        .onChange(of: emailAddress) { _ in
+          updateCode()
+        }
+      }
+      .tabItem {
+        Label("Me", systemImage: "person.crop.square")
+      }
     }
     .environmentObject(prospects)
   }
@@ -70,6 +85,10 @@ struct MeView: View {
     }
 
     return UIImage(systemName: "xmark.circle") ?? UIImage()
+  }
+  
+  func updateCode() {
+    qrCode = generateQRCode(from: "\(name)\n\(emailAddress)")
   }
 }
 
