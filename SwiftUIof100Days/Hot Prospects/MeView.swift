@@ -50,6 +50,9 @@ struct MeView: View {
             .interpolation(.none)
             .scaledToFit()
             .frame(width: 200, height: 200)
+            .overlay(content: {
+              Color.purple.opacity(0.2)
+            })
             .contextMenu {
               Button {
                 let imageServer = ImageServer()

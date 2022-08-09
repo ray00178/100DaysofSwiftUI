@@ -60,6 +60,7 @@
 		719A7887289AB5A600F584E5 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A7886289AB5A600F584E5 /* Prospect.swift */; };
 		719A7889289AB64F00F584E5 /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A7888289AB64F00F584E5 /* Prospects.swift */; };
 		719A788C289D625800F584E5 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 719A788B289D625800F584E5 /* CodeScanner */; };
+		719A789128A1504800F584E5 /* Day86View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A789028A1504800F584E5 /* Day86View.swift */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -147,6 +148,7 @@
 		719A788428996C6E00F584E5 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		719A7886289AB5A600F584E5 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		719A7888289AB64F00F584E5 /* Prospects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospects.swift; sourceTree = "<group>"; };
+		719A789028A1504800F584E5 /* Day86View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day86View.swift; sourceTree = "<group>"; };
 		719B82BB282585A400258B63 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		719B82BE2825862E00258B63 /* Day32View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32View.swift; sourceTree = "<group>"; };
 		719B82C128296C9200258B63 /* Day33View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33View.swift; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 		719A788F28A14BC800F584E5 /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
+				719A789028A1504800F584E5 /* Day86View.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 				7185C2C72850E6F500FE1D6E /* UserX.swift in Sources */,
 				719A78682885AFBA00F584E5 /* ResultData.swift in Sources */,
 				7110C62A280C6271004A0AA9 /* Day62View.swift in Sources */,
+				719A789128A1504800F584E5 /* Day86View.swift in Sources */,
 				7191D86B2869F5FC00EA1722 /* Singer+CoreDataClass.swift in Sources */,
 				7110C637280DB700004A0AA9 /* Day16View.swift in Sources */,
 				719B82DF283D29A500258B63 /* Theme.swift in Sources */,
