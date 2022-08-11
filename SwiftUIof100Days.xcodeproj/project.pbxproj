@@ -61,6 +61,10 @@
 		719A7889289AB64F00F584E5 /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A7888289AB64F00F584E5 /* Prospects.swift */; };
 		719A788C289D625800F584E5 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 719A788B289D625800F584E5 /* CodeScanner */; };
 		719A789128A1504800F584E5 /* Day86View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A789028A1504800F584E5 /* Day86View.swift */; };
+		719A789328A2A0EC00F584E5 /* Day87View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A789228A2A0EC00F584E5 /* Day87View.swift */; };
+		719A78AF28A53E3600F584E5 /* Day88View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A78AE28A53E3600F584E5 /* Day88View.swift */; };
+		719A78B128A53F4600F584E5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A78B028A53F4600F584E5 /* Card.swift */; };
+		719A78B328A53FEF00F584E5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A78B228A53FEF00F584E5 /* CardView.swift */; };
 		719B82BC282585A400258B63 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B82BB282585A400258B63 /* start.txt */; };
 		719B82BF2825862E00258B63 /* Day32View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82BE2825862E00258B63 /* Day32View.swift */; };
 		719B82C228296C9200258B63 /* Day33View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B82C128296C9200258B63 /* Day33View.swift */; };
@@ -149,6 +153,10 @@
 		719A7886289AB5A600F584E5 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		719A7888289AB64F00F584E5 /* Prospects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospects.swift; sourceTree = "<group>"; };
 		719A789028A1504800F584E5 /* Day86View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day86View.swift; sourceTree = "<group>"; };
+		719A789228A2A0EC00F584E5 /* Day87View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day87View.swift; sourceTree = "<group>"; };
+		719A78AE28A53E3600F584E5 /* Day88View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day88View.swift; sourceTree = "<group>"; };
+		719A78B028A53F4600F584E5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		719A78B228A53FEF00F584E5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		719B82BB282585A400258B63 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		719B82BE2825862E00258B63 /* Day32View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32View.swift; sourceTree = "<group>"; };
 		719B82C128296C9200258B63 /* Day33View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33View.swift; sourceTree = "<group>"; };
@@ -417,6 +425,10 @@
 			isa = PBXGroup;
 			children = (
 				719A789028A1504800F584E5 /* Day86View.swift */,
+				719A789228A2A0EC00F584E5 /* Day87View.swift */,
+				719A78AE28A53E3600F584E5 /* Day88View.swift */,
+				719A78B028A53F4600F584E5 /* Card.swift */,
+				719A78B228A53FEF00F584E5 /* CardView.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
@@ -681,11 +693,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7191D866286210AB00EA1722 /* CoreDataProjectContentView.swift in Sources */,
+				719A78B328A53FEF00F584E5 /* CardView.swift in Sources */,
 				71D7F0A02818327400B31AFC /* Day23View.swift in Sources */,
 				71D7F0D82821777800B31AFC /* Day29View.swift in Sources */,
 				7191D85828620B7600EA1722 /* CoreDataProject.xcdatamodeld in Sources */,
 				7185C2CB285162E200FE1D6E /* Order.swift in Sources */,
 				711DA793285E2394009AB3E7 /* RatingView.swift in Sources */,
+				719A789328A2A0EC00F584E5 /* Day87View.swift in Sources */,
 				719A78752891771F00F584E5 /* LocationFetcher.swift in Sources */,
 				7185C2C92850E92A00FE1D6E /* CupcakeContentView.swift in Sources */,
 				719A788328996C1500F584E5 /* ProspectsView.swift in Sources */,
@@ -706,6 +720,7 @@
 				719A789128A1504800F584E5 /* Day86View.swift in Sources */,
 				7191D86B2869F5FC00EA1722 /* Singer+CoreDataClass.swift in Sources */,
 				7110C637280DB700004A0AA9 /* Day16View.swift in Sources */,
+				719A78AF28A53E3600F584E5 /* Day88View.swift in Sources */,
 				719B82DF283D29A500258B63 /* Theme.swift in Sources */,
 				71D7F0A6281AE28400B31AFC /* Day27View.swift in Sources */,
 				7191D87A286DF16600EA1722 /* Day63View.swift in Sources */,
@@ -725,6 +740,7 @@
 				711DA795285E2820009AB3E7 /* EmojiRatingView.swift in Sources */,
 				719A786B2886EA1100F584E5 /* ContentView-ViewModel.swift in Sources */,
 				7102D11F28772436001077B7 /* Day68View.swift in Sources */,
+				719A78B128A53F4600F584E5 /* Card.swift in Sources */,
 				71D7F095281055E200B31AFC /* Day19View.swift in Sources */,
 				719B82C228296C9200258B63 /* Day33View.swift in Sources */,
 				7191D8682862128100EA1722 /* CoreDataProjectDataController.swift in Sources */,
