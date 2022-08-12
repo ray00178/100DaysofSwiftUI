@@ -10,22 +10,25 @@ import SwiftUI
 // MARK: - CardView
 
 struct CardView: View {
-  
   @State private var isShowingAnswer = false
-    
+
+  @State private var offset = CGSize.zero
+
   let card: Card
+
+  var removal: (() -> Void)? = nil
   
   var body: some View {
     ZStack {
       RoundedRectangle(cornerRadius: 25.0, style: .circular)
         .fill(.white)
         .shadow(radius: 10)
-      
+
       VStack {
         Text(card.prompt)
           .font(.largeTitle)
           .foregroundColor(.black)
-        
+
         if isShowingAnswer {
           Text(card.answer)
             .font(.title)
@@ -34,15 +37,29 @@ struct CardView: View {
       }
       .padding(20)
       .multilineTextAlignment(.center)
-      
     }
-    .padding([.leading, .trailing])
-    .frame(width: .infinity, height: 250)
+    .frame(width: 380, height: 250)
+    .rotationEffect(.degrees(Double(offset.width / 5)))
+    .offset(x: offset.width * 5, y: 0)
+    .opacity(1 - Double(abs(offset.width / 100)))
     .onTapGesture {
       withAnimation {
         isShowingAnswer.toggle()
       }
     }
+    .gesture(DragGesture()
+      .onChanged { gesture in
+        offset = gesture.translation
+      }
+      .onEnded { _ in
+        if abs(offset.width) > 100 {
+          removal?()
+        } else {
+          withAnimation {
+            offset = .zero
+          }
+        }
+      })
   }
 }
 

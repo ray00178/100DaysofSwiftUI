@@ -17,16 +17,24 @@ struct Day88View: View {
       Image("background")
         .resizable()
         .ignoresSafeArea()
-      
+
       VStack {
         ZStack {
           ForEach(0 ..< cards.count, id: \.self) { index in
-            CardView(card: cards[index])
-              .statck(at: index, total: cards.count)
+            CardView(card: cards[index]) {
+              withAnimation {
+                removeCard(at: index)
+              }
+            }
+            .statck(at: index, total: cards.count)
           }
         }
       }
     }
+  }
+
+  func removeCard(at index: Int) {
+    cards.remove(at: index)
   }
 }
 
@@ -41,7 +49,6 @@ struct Day88View_Previews: PreviewProvider {
 // MARK: - Extension
 
 extension View {
-  
   func statck(at position: Int, total: Int) -> some View {
     let offset = Double(total - position)
     return self.offset(x: 0, y: offset)
