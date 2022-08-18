@@ -11,12 +11,13 @@ import SwiftUI
 
 struct Day88View: View {
   @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
-
+  @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
   @Environment(\.scenePhase) var scenePhase
 
-  @State private var cards: [Card] = Array(repeating: Card.example, count: 10)
+  @State private var cards: [Card] = [Card]()
   @State private var timeRemaining = 100
   @State private var isActive = true
+  @State private var showingEditScreen = false
 
   let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
@@ -42,13 +43,15 @@ struct Day88View: View {
                 removeCard(at: index)
               }
             }
-            .statck(at: index, total: cards.count)
+            .statcked(at: index, total: cards.count)
+            .allowsHitTesting(index == cards.count - 1)
+            .accessibilityHidden(index < cards.count - 1)
           }
         }
         .allowsHitTesting(timeRemaining > 0)
 
         if cards.isEmpty {
-          Button("Start Agent", action: resetCards)
+          Button("Start Again", action: resetCards)
             .padding()
             .background(.white)
             .foregroundColor(.black)
@@ -56,22 +59,60 @@ struct Day88View: View {
         }
       }
 
-      if accessibilityDifferentiateWithoutColor {
+      VStack {
+        HStack {
+          Spacer()
+
+          Button {
+            showingEditScreen = true
+          } label: {
+            Image(systemName: "plus.circle")
+              .padding()
+              .background(.black.opacity(0.7))
+              .clipShape(Circle())
+          }
+        }
+        
+        Spacer()
+      }
+      .foregroundColor(.white)
+      .font(.largeTitle)
+      .padding()
+
+      if accessibilityDifferentiateWithoutColor ||
+        voiceOverEnabled
+      {
         VStack {
           Spacer()
 
           HStack {
-            Image(systemName: "xmark.circle")
-              .padding()
-              .background(.black.opacity(0.7))
-              .clipShape(Circle())
+            Button {
+              withAnimation {
+                removeCard(at: cards.count - 1)
+              }
+            } label: {
+              Image(systemName: "xmark.circle")
+                .padding()
+                .background(.black.opacity(0.7))
+                .clipShape(Circle())
+            }
+            .accessibilityLabel("Wrong")
+            .accessibilityHint("Mark your answer as being incorrect.")
 
             Spacer()
 
-            Image(systemName: "checkmark.circle")
-              .padding()
-              .background(.black.opacity(0.7))
-              .clipShape(Circle())
+            Button {
+              withAnimation {
+                removeCard(at: cards.count - 1)
+              }
+            } label: {
+              Image(systemName: "checkmark.circle")
+                .padding()
+                .background(.black.opacity(0.7))
+                .clipShape(Circle())
+            }
+            .accessibilityLabel("Correct")
+            .accessibilityHint("Mark your answer as being correct.")
           }
           .foregroundColor(.white)
           .font(.largeTitle)
@@ -95,9 +136,15 @@ struct Day88View: View {
         isActive = false
       }
     }
+    .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
+      EditCards()
+    }
+    .onAppear(perform: resetCards)
   }
 
   func removeCard(at index: Int) {
+    guard index >= 0 else { return }
+
     cards.remove(at: index)
 
     if cards.isEmpty {
@@ -106,9 +153,19 @@ struct Day88View: View {
   }
 
   func resetCards() {
-    cards = Array(repeating: Card.example, count: 10)
     timeRemaining = 100
     isActive = true
+    loadData()
+  }
+  
+  func loadData() {
+    guard let data = UserDefaults.standard.data(forKey: "Cards"),
+          let value = try? JSONDecoder().decode([Card].self, from: data)
+    else {
+      return
+    }
+
+    cards = value
   }
 }
 
@@ -123,7 +180,7 @@ struct Day88View_Previews: PreviewProvider {
 // MARK: - Extension
 
 extension View {
-  func statck(at position: Int, total: Int) -> some View {
+  func statcked(at position: Int, total: Int) -> some View {
     let offset = Double(total - position)
     return self.offset(x: 0, y: offset)
   }
