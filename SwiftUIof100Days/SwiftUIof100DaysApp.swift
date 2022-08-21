@@ -27,7 +27,7 @@ struct SwiftUIof100DaysApp: App {
       /*CoreDataProjectContentView()
         .environment(\.managedObjectContext, dataController2.container.viewContext)*/
       
-      Day88View()
+      Day92View()
     }
   }
 }
