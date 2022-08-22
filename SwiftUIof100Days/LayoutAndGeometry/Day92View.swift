@@ -25,9 +25,9 @@ struct Day92View: View {
 
         VStack {
           Text("Full name:")
-            .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
           Text("Ray Jhang")
             .font(.largeTitle)
+            .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
         }
       }
 
