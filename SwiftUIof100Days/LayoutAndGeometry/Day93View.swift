@@ -11,10 +11,44 @@ import SwiftUI
 
 // Reference: https://www.hackingwithswift.com/books/ios-swiftui/understanding-frames-and-coordinates-inside-geometryreader
 struct Day93View: View {
+  let colors: [Color] = [.red, .green, .blue, .orange, .pink, .purple, .yellow]
+
   var body: some View {
-    OuterView()
-      .background(.red)
-      .coordinateSpace(name: "Custom")
+    ScrollView(.horizontal, showsIndicators: false) {
+      HStack(spacing: 0) {
+        ForEach(1 ..< 20) { num in
+          GeometryReader { geo in
+            Text("Number \(num)")
+              .font(.largeTitle)
+              .padding()
+              .background(.red)
+              .rotation3DEffect(.degrees(-geo.frame(in: .global).minX) / 8, axis: (x: 0, y: 1, z: 0))
+              .frame(width: 200, height: 200)
+          }
+          .frame(width: 200, height: 200)
+        }
+      }
+    }
+
+    /* GeometryReader { fullView in
+       ScrollView {
+         ForEach(0 ..< 50) { index in
+           GeometryReader { geo in
+             Text("Row #\(index)")
+               .font(.title)
+               .frame(maxWidth: .infinity)
+               .background(colors[index % 7])
+               .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 5, axis: (x: 0, y: 1, z: 0))
+           }
+           .frame(height: 40)
+         }
+       }
+     } */
+
+    /* OuterView()
+     .background(.red)
+     .coordinateSpace(name: "Custom") */
+
     /* VStack(spacing: 0) {
        GeometryReader { geo in
          Text("Hello World!")
