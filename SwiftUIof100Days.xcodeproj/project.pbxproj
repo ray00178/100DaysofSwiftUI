@@ -17,6 +17,9 @@
 		7110C62C280C6272004A0AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7110C62B280C6272004A0AA9 /* Assets.xcassets */; };
 		7110C62F280C6272004A0AA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7110C62E280C6272004A0AA9 /* Preview Assets.xcassets */; };
 		7110C637280DB700004A0AA9 /* Day16View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110C636280DB700004A0AA9 /* Day16View.swift */; };
+		7119554728BCFAB200542112 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119554628BCFAB200542112 /* SkiDetailsView.swift */; };
+		7119554928BCFB7500542112 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119554828BCFB7500542112 /* ResortDetailsView.swift */; };
+		7119554B28BF9DA700542112 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119554A28BF9DA700542112 /* Facility.swift */; };
 		711DA78A2858D805009AB3E7 /* BookwormContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DA7892858D805009AB3E7 /* BookwormContentView.swift */; };
 		711DA78D2858DC98009AB3E7 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 711DA78B2858DC98009AB3E7 /* Bookworm.xcdatamodeld */; };
 		711DA78F2858DD07009AB3E7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DA78E2858DD07009AB3E7 /* DataController.swift */; };
@@ -29,6 +32,11 @@
 		713B688828B3C907006C1570 /* Day93View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B688728B3C907006C1570 /* Day93View.swift */; };
 		713B688B28B7BBC3006C1570 /* Day96View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B688A28B7BBC3006C1570 /* Day96View.swift */; };
 		713B688D28BA52EF006C1570 /* Day96User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B688C28BA52EF006C1570 /* Day96User.swift */; };
+		713B688F28BCF428006C1570 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B688E28BCF428006C1570 /* Resort.swift */; };
+		713B689128BCF4B3006C1570 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 713B689028BCF4B3006C1570 /* resorts.json */; };
+		713B689328BCF540006C1570 /* Day97View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B689228BCF540006C1570 /* Day97View.swift */; };
+		713B689528BCF74E006C1570 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B689428BCF74E006C1570 /* WelcomeView.swift */; };
+		713B689728BCF8ED006C1570 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B689628BCF8ED006C1570 /* ResortView.swift */; };
 		7179CD28285165EF00676AB7 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CD27285165EF00676AB7 /* AddressView.swift */; };
 		7179CD2A2852392A00676AB7 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179CD292852392A00676AB7 /* CheckoutView.swift */; };
 		7185C2C72850E6F500FE1D6E /* UserX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185C2C62850E6F500FE1D6E /* UserX.swift */; };
@@ -116,6 +124,9 @@
 		7110C62B280C6272004A0AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7110C62E280C6272004A0AA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7110C636280DB700004A0AA9 /* Day16View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16View.swift; sourceTree = "<group>"; };
+		7119554628BCFAB200542112 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
+		7119554828BCFB7500542112 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+		7119554A28BF9DA700542112 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
 		711DA7892858D805009AB3E7 /* BookwormContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormContentView.swift; sourceTree = "<group>"; };
 		711DA78C2858DC98009AB3E7 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		711DA78E2858DD07009AB3E7 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -128,6 +139,11 @@
 		713B688728B3C907006C1570 /* Day93View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day93View.swift; sourceTree = "<group>"; };
 		713B688A28B7BBC3006C1570 /* Day96View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day96View.swift; sourceTree = "<group>"; };
 		713B688C28BA52EF006C1570 /* Day96User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day96User.swift; sourceTree = "<group>"; };
+		713B688E28BCF428006C1570 /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
+		713B689028BCF4B3006C1570 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
+		713B689228BCF540006C1570 /* Day97View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day97View.swift; sourceTree = "<group>"; };
+		713B689428BCF74E006C1570 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		713B689628BCF8ED006C1570 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
 		7179CD27285165EF00676AB7 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		7179CD292852392A00676AB7 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		7185C2C62850E6F500FE1D6E /* UserX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserX.swift; sourceTree = "<group>"; };
@@ -348,10 +364,25 @@
 		713B688928B7BA17006C1570 /* SnowSeeker */ = {
 			isa = PBXGroup;
 			children = (
+				713B689828BCFA0D006C1570 /* Model */,
 				713B688A28B7BBC3006C1570 /* Day96View.swift */,
 				713B688C28BA52EF006C1570 /* Day96User.swift */,
+				713B689228BCF540006C1570 /* Day97View.swift */,
+				713B689428BCF74E006C1570 /* WelcomeView.swift */,
+				713B689628BCF8ED006C1570 /* ResortView.swift */,
+				7119554628BCFAB200542112 /* SkiDetailsView.swift */,
+				7119554828BCFB7500542112 /* ResortDetailsView.swift */,
 			);
 			path = SnowSeeker;
+			sourceTree = "<group>";
+		};
+		713B689828BCFA0D006C1570 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				713B688E28BCF428006C1570 /* Resort.swift */,
+				7119554A28BF9DA700542112 /* Facility.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		7185C2C52850E63C00FE1D6E /* CupcakeCorner */ = {
@@ -635,6 +666,7 @@
 			children = (
 				719B82BB282585A400258B63 /* start.txt */,
 				71D7F0DA28217BEB00B31AFC /* URL-file.txt */,
+				713B689028BCF4B3006C1570 /* resorts.json */,
 				719B82D8283BE0A200258B63 /* astronauts.json */,
 				719B82DA283BE0A900258B63 /* missions.json */,
 			);
@@ -707,6 +739,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713B689128BCF4B3006C1570 /* resorts.json in Resources */,
 				71D7F0DB28217BEB00B31AFC /* URL-file.txt in Resources */,
 				719B82BC282585A400258B63 /* start.txt in Resources */,
 				7110C62F280C6272004A0AA9 /* Preview Assets.xcassets in Resources */,
@@ -742,9 +775,11 @@
 				713B688628B1B6A8006C1570 /* Day92View.swift in Sources */,
 				719B82E2283D2DD500258B63 /* MissionView.swift in Sources */,
 				719B82D5283BDFC000258B63 /* Astronaut.swift in Sources */,
+				713B689328BCF540006C1570 /* Day97View.swift in Sources */,
 				719A787A2894233700F584E5 /* DelayedUpdater.swift in Sources */,
 				719B82CD2835486F00258B63 /* Day39View.swift in Sources */,
 				7102D128287F19AB001077B7 /* Day70View.swift in Sources */,
+				713B688F28BCF428006C1570 /* Resort.swift in Sources */,
 				7191D86C2869F5FC00EA1722 /* Singer+CoreDataProperties.swift in Sources */,
 				71D7F0A3281988AF00B31AFC /* Day26View.swift in Sources */,
 				7185C2C72850E6F500FE1D6E /* UserX.swift in Sources */,
@@ -766,6 +801,7 @@
 				7191D86328620E8800EA1722 /* Movie+CoreDataClass.swift in Sources */,
 				7179CD2A2852392A00676AB7 /* CheckoutView.swift in Sources */,
 				71D7F09828105D7F00B31AFC /* Day20View.swift in Sources */,
+				7119554B28BF9DA700542112 /* Facility.swift in Sources */,
 				719A78782892CA5500F584E5 /* Day79View.swift in Sources */,
 				7191D8742869FF2B00EA1722 /* Country+CoreDataProperties.swift in Sources */,
 				719B82BF2825862E00258B63 /* Day32View.swift in Sources */,
@@ -778,7 +814,9 @@
 				71D7F095281055E200B31AFC /* Day19View.swift in Sources */,
 				719B82C228296C9200258B63 /* Day33View.swift in Sources */,
 				7191D8682862128100EA1722 /* CoreDataProjectDataController.swift in Sources */,
+				713B689728BCF8ED006C1570 /* ResortView.swift in Sources */,
 				719B82E8283FD69C00258B63 /* Day43View.swift in Sources */,
+				713B689528BCF74E006C1570 /* WelcomeView.swift in Sources */,
 				71D7F0D4281ECC0A00B31AFC /* SleepCalculator.mlmodel in Sources */,
 				719A787E2899688000F584E5 /* AppDelegate.swift in Sources */,
 				7191D86428620E8800EA1722 /* Movie+CoreDataProperties.swift in Sources */,
@@ -804,6 +842,8 @@
 				719B82C5282EBC0100258B63 /* Day36View.swift in Sources */,
 				719B82E4283FD01400258B63 /* AstronautView.swift in Sources */,
 				719B82C82832AA9500258B63 /* Day37View.swift in Sources */,
+				7119554728BCFAB200542112 /* SkiDetailsView.swift in Sources */,
+				7119554928BCFB7500542112 /* ResortDetailsView.swift in Sources */,
 				719B83002847C5C400258B63 /* Day45View.swift in Sources */,
 				7179CD28285165EF00676AB7 /* AddressView.swift in Sources */,
 				7191D8762869FF2B00EA1722 /* Candy+CoreDataProperties.swift in Sources */,
