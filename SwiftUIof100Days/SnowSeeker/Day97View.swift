@@ -10,9 +10,9 @@ import SwiftUI
 // MARK: - Day97View
 
 struct Day97View: View {
-  
   @State private var searchText = ""
-  
+  @StateObject private var favorites = Favorites()
+
   let resorts: [Resort] = Bundle.main.decode("resorts.json")
 
   var filteredResorts: [Resort] {
@@ -22,7 +22,7 @@ struct Day97View: View {
       return resorts.filter { $0.name.localizedStandardContains(searchText) }
     }
   }
-  
+
   var body: some View {
     NavigationView {
       List(filteredResorts) { resort in
@@ -39,8 +39,18 @@ struct Day97View: View {
           VStack(alignment: .leading) {
             Text(resort.name)
               .font(.headline)
-            Text("\(resort.runs) runs")
-              .foregroundColor(.secondary)
+            
+            HStack(spacing: 8.0) {
+              Text("\(resort.runs) runs")
+                .foregroundColor(.secondary)
+              
+              if favorites.contains(resort) {
+                Image(systemName: "heart.fill")
+                  .accessibilityLabel("This is a favorite resort")
+                  .foregroundColor(.yellow)
+                  .frame(width: 16.0, height: 16.0)
+              }
+            }
           }
         }
       }
@@ -49,6 +59,7 @@ struct Day97View: View {
 
       WelcomeView()
     }
+    .environmentObject(favorites)
   }
 }
 

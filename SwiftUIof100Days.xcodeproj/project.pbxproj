@@ -20,6 +20,7 @@
 		7119554728BCFAB200542112 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119554628BCFAB200542112 /* SkiDetailsView.swift */; };
 		7119554928BCFB7500542112 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119554828BCFB7500542112 /* ResortDetailsView.swift */; };
 		7119554B28BF9DA700542112 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119554A28BF9DA700542112 /* Facility.swift */; };
+		7119554D28BFB32E00542112 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119554C28BFB32E00542112 /* Favorites.swift */; };
 		711DA78A2858D805009AB3E7 /* BookwormContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DA7892858D805009AB3E7 /* BookwormContentView.swift */; };
 		711DA78D2858DC98009AB3E7 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 711DA78B2858DC98009AB3E7 /* Bookworm.xcdatamodeld */; };
 		711DA78F2858DD07009AB3E7 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DA78E2858DD07009AB3E7 /* DataController.swift */; };
@@ -127,6 +128,7 @@
 		7119554628BCFAB200542112 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
 		7119554828BCFB7500542112 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
 		7119554A28BF9DA700542112 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		7119554C28BFB32E00542112 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		711DA7892858D805009AB3E7 /* BookwormContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormContentView.swift; sourceTree = "<group>"; };
 		711DA78C2858DC98009AB3E7 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		711DA78E2858DD07009AB3E7 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 			children = (
 				713B688E28BCF428006C1570 /* Resort.swift */,
 				7119554A28BF9DA700542112 /* Facility.swift */,
+				7119554C28BFB32E00542112 /* Favorites.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -757,6 +760,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7191D866286210AB00EA1722 /* CoreDataProjectContentView.swift in Sources */,
+				7119554D28BFB32E00542112 /* Favorites.swift in Sources */,
 				719A78B328A53FEF00F584E5 /* CardView.swift in Sources */,
 				71D7F0A02818327400B31AFC /* Day23View.swift in Sources */,
 				71D7F0D82821777800B31AFC /* Day29View.swift in Sources */,

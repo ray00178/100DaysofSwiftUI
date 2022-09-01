@@ -12,18 +12,29 @@ import SwiftUI
 struct ResortView: View {
   @Environment(\.horizontalSizeClass) var sizeClass
   @Environment(\.dynamicTypeSize) var typeSize
+  @EnvironmentObject var favorites: Favorites
 
   @State private var selectedFacility: Facility?
   @State private var showingFacility = false
-
+  
   let resort: Resort
 
   var body: some View {
     ScrollView {
       VStack(alignment: .leading, spacing: 0) {
-        Image(resort.id)
-          .resizable()
-          .scaledToFit()
+        ZStack(alignment: .topLeading) {
+          Image(resort.id)
+            .resizable()
+            .scaledToFit()
+
+          if favorites.contains(resort) {
+            Image(systemName: "heart.fill")
+              .accessibilityLabel("This is a favorite resort")
+              .foregroundColor(.yellow)
+              .font(.largeTitle)
+              .padding(20.0)
+          }
+        }
 
         HStack {
           if sizeClass == .compact, typeSize > .large {
@@ -61,6 +72,16 @@ struct ResortView: View {
           .padding(.vertical)
         }
         .padding(.horizontal)
+
+        Button(favorites.contains(resort) ? "Remove from favorites" : "Add to favorites") {
+          if favorites.contains(resort) {
+            favorites.remove(resort)
+          } else {
+            favorites.add(resort)
+          }
+        }
+        .buttonStyle(.borderedProminent)
+        .padding()
       }
     }
     // .ignoresSafeArea(edges: .top)
@@ -81,5 +102,6 @@ struct ResortView: View {
 struct ResortView_Previews: PreviewProvider {
   static var previews: some View {
     ResortView(resort: Resort.example)
+      .environmentObject(Favorites())
   }
 }
